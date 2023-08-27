@@ -1,0 +1,26 @@
+@import 'variables.scss';
+
+@import 'header.scss';
+@import 'services.scss';
+@import 'advantages.scss';
+
+body {
+	font-family: 'Gilroy', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.title {
+	font-size: 34px;
+	line-height: 36px;
+	font-weight: 600;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;	
+	text-align: center;
+}

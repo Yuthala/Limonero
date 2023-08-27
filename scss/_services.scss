@@ -1,0 +1,56 @@
+
+.services {
+	background-color:$dark_accent;
+	height: 9cap;
+	&__title {
+		padding-top: 127px;
+		margin-bottom: 90px;
+		color: $light_shades;
+	}
+
+	&__inner {
+		display: grid;
+		grid-template-rows: max-content max-content;
+		grid-template-columns: max-content max-content;
+		grid-gap: 178px;
+		justify-content: center;
+		padding-bottom: 100px;
+	}
+	&__item {
+		width: 417px;
+		height: 286px;
+		background-color: $dark_shades;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		padding: 20px;
+	}
+	&__header {
+		font-size: 32px;
+		font-weight: 400;
+		letter-spacing: 0.02em;
+		color: $light_accent;
+		margin-bottom: 27px;
+	}
+	&__text {
+		font-size: 18px;
+		line-height: 22px;
+		font-weight: 300;
+		letter-spacing: 0.02em;
+		color: $light_shades;
+	}
+	&__price {
+		font-size: 16px;
+		font-weight: 400;
+		color: $light_shades;
+	}
+	&-bottom {
+		height: 150px;
+		background: url(../img/buildings__white.png) center 105% repeat-x, 
+			$dark_accent;
+	}
+}
+
+
