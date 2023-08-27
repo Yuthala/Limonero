@@ -1,5 +1,4 @@
 .advantages {
-	height: 745px;
 	&__title {
 		color: $dark_shades;
 		padding-top: 138px;
@@ -16,11 +15,14 @@
 		text-align: center;
 		img {
 			margin-bottom: 29px;
+			margin-top: 50px;
 		}
 	}
 	&__inner {
-		display: flex;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat (2, 1fr);
 		justify-content: space-evenly;
-		padding-top: 127px;
+		padding-top: 32px;
 	}
 }
