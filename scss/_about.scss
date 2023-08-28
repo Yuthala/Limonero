@@ -1,6 +1,39 @@
 .about {
 	padding-top: 88px;
 	padding-left: 20px;
+	&__title {
+		margin-top: 88px;
+		margin-bottom: 116px;
+		color: $dark_shades;
+	}
+	&__inner {
+		display: flex;
+		align-items: center;
+		padding-bottom: 155px;
+	}
+	&__item {
+		position: relative;
+		img {
+			max-width: 400px;
+			margin-right: 120px;
+		}
+	}
+	&__circle {
+		position: absolute;
+		top: -5px;
+		left: -5px;
+		z-index: -1;
+		width: 410px;
+		height: 410px;
+		border-radius: 50%;
+		background-color: $light_accent;
+	}
+	&__text {
+		font-size: 18px;
+		line-height: 22px;
+		color: $dark_shades;
+	}
+
 }
 
 .divider {
@@ -10,36 +43,3 @@
 	background-color: $light_accent;
 }
 
-.about__title {
-	margin-top: 88px;
-	margin-bottom: 116px;
-	color: $dark_shades;
-}
-
-.about__inner {
-	display: flex;
-	align-items: center;
-	padding-bottom: 155px;
-}
-.about__item {
-	position: relative;
-	img {
-		max-width: 400px;
-		margin-right: 120px;
-	}
-}
-.about__circle {
-	position: absolute;
-	top: -5px;
-	left: -5px;
-	z-index: -1;
-	width: 410px;
-	height: 410px;
-	border-radius: 50%;
-	background-color: $light_accent;
-}
-.about__text {
-	font-size: 18px;
-	line-height: 22px;
-	color: $dark_shades;
-}
