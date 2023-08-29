@@ -1,29 +1,47 @@
 .contacts {
 	background-color: $dark_accent;
+	&__title {
+		color: $dark_shades;
+		padding-top: 95px;
+	}
+	&__icon-box {
+		display: flex;
+		justify-content: space-between;
+		max-width: 570px;
+		padding-top: 64px;
+		margin: 0 auto;
+	}
+	&__form {
+		display: flex;
+		flex-direction: column;
+		max-width: 770px;
+		margin: 0 auto;
+		margin-top: 153px;
+		input {
+			height: 52px;
+		}
+	}
+	&__item {
+		text-align: center;
+		max-width: 130px;
+	}
+	&__name, &__email, &__topic {
+		margin-bottom: 20px;
+		padding-left: 20px;;
+	}
+	&__textarea {
+		margin-bottom: 21px;
+		height: 195px;
+		resize: none;
+		padding: 22px;
+	}
+	&__button {
+		background-color: $light_accent;
+		font-size: 17px;
+		font-weight: 400;
+		color: $dark_shades;
+		border: none;
+		cursor: pointer;
+	}
 }
 
-.contacts__title {
-	color: $dark_shades;
-}
-.title {
-}
-.contacts__inner {
-}
-.contacts__icon-box {
-}
-.contacts__item {
-}
-.contacts__text {
-}
-.contacts__form {
-}
-.contacts__name {
-}
-.contacts__email {
-}
-.contacts__topic {
-}
-.contacts__textarea {
-}
-.contacts__button {
-}
