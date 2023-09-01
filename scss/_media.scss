@@ -121,12 +121,12 @@
 
 
 /*iPhone SE*/
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 391px) {
 	body .container {
-		width: 375px;
+		width: 390px;
 	}
 
-	/*header*/
+/*header*/
 
 	.menu__desktop {
 		display: none;
@@ -134,6 +134,8 @@
 
 	.menu__mobile {
 		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 
 	.menu {
@@ -141,6 +143,148 @@
 			width: 40px;
 			height: 3px;
 			background-color: #CAC25F;
+			position: relative;
+			&::after {
+				content: '';
+				width: 30px;
+				height: 3px;
+				background-color: #CAC25F;
+				position: absolute;
+				bottom: -10px;
+			}
+			&::before {
+				content: '';
+				width: 30px;
+				height: 3px;
+				background-color: #CAC25F;
+				position: absolute;
+				top: -10px;
+			}
 		}
+		&__mobile {
+			img {
+				width: 90px;
+			}
+		}
+	}
+
+	.header {
+		&__title {
+			font-size: 32px;
+			line-height: 40px;
+			margin-top: 77px;
+		}
+		&__button {
+			margin-bottom: 76px;
+		}
+	}
+
+/*services*/
+
+	.services {
+		background-color: $dark_shades;
+		&__title {
+			padding-top: 80px;
+			margin-bottom: 70px;
+			color: $light_shades;
+		}
+		&__item {
+			width: 340px;
+			height: 286px;
+			padding: 20px;
+			border-top: 2px dashed #CAC25F;
+			&:first-child {
+				border: none;
+			}
+		}
+		&__header {
+			margin: 15px auto;
+		}
+		&__text {
+			font-size: 16px;
+		}
+		&-bottom {
+			background: url(../img/buildings__white.png) center 108% repeat-x, 
+				$dark_shades;
+		}
+	}
+
+/*advantages*/
+
+	.advantages {
+		&__title {
+			padding-top: 48px;
+		}
+		&__item {
+			text-align: center;
+			img {
+				margin-bottom: 5px;
+				margin-top: 50px;
+				max-width: 300px;
+			}
+		}
+		&__inner {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			align-items: center;
+			padding-top: 12px;
+		}
+	}	
+
+/*about*/
+	.about {
+		&__inner {
+			flex-direction: column;
+			justify-content: center;
+			padding-bottom: 80px;
+			gap: 40px;
+		}
+		&__item {
+			position: relative;
+			img {
+				max-width: 300px;
+				margin-right: 0;
+				margin: 0 auto;
+			}
+		}
+		&__circle {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 10px;
+			z-index: -1;
+			width: 310px;
+			height: 310px;
+			border-radius: 50%;
+			background-color: $light_accent;
+		}
+		&__text {
+			text-align: center;
+			width: 90%;
+			padding: 0 20px;
+		}
+	}
+
+/*contacts*/
+	.contacts {
+		&__form {
+			max-width: 300px;
+			margin-top: 70px;
+		}
+	}
+
+/*contacts*/
+	.warning {
+		margin: 20px;
+		font-size: 14px;
+	}
+	.footer__author {
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.footer__author-text {
+		margin-top: 10px;
 	}
 }
