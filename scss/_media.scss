@@ -1,0 +1,68 @@
+@media screen and (max-width: 769px) {
+	body .container {
+		width: 768px;
+	}
+
+	/*header*/
+	.menu {
+		&__item {
+			font-size: 14px;
+			line-height: 17px;
+			margin-right: 20px;
+			&:first-child {
+				margin-right: 0;
+			}
+			&:last-child {
+				margin-right: 10px;
+			}
+			img {
+				width: 70px;
+				padding-right: 0;
+			}
+		}
+	}
+
+	.header {
+		&__title {
+		font-size: 36px;
+		line-height: 41px;
+		color: $dark_shades;
+		margin: 167px auto 4px;
+		}
+		&__button {
+			margin: 0 auto 156px;
+		}
+	}
+
+	/*services*/
+	.services {
+		&__inner {
+			grid-gap: 30px;
+			grid-template-columns: max-content;
+			padding-bottom: 70px;
+		}
+		&__title {
+			padding-top: 97px;
+			margin-bottom: 70px;
+		}
+		&-bottom {
+			background: url(../img/buildings__white.png) center 108% repeat-x, 
+				$dark_accent;
+		}
+	}
+/*advantages*/
+
+	.advantages {
+		&__title {
+			padding-top: 98px;
+		}
+		&__inner {
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat (3, 1fr);
+			padding-top: 32px;
+		}
+		&__text {
+			font-size: 18px;
+		}
+	}
+}
