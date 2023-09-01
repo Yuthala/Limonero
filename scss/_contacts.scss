@@ -4,6 +4,9 @@
 		color: $dark_shades;
 		padding-top: 95px;
 	}
+	&__inner {
+		padding: 20px;
+	}
 	&__icon-box {
 		display: flex;
 		justify-content: space-between;

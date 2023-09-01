@@ -1,9 +1,11 @@
+/*iPad*/
+
 @media screen and (max-width: 769px) {
 	body .container {
 		width: 768px;
 	}
 
-	/*header*/
+/*header*/
 	.menu {
 		&__item {
 			font-size: 14px;
@@ -34,7 +36,7 @@
 		}
 	}
 
-	/*services*/
+/*services*/
 	.services {
 		&__inner {
 			grid-gap: 30px;
@@ -46,8 +48,7 @@
 			margin-bottom: 70px;
 		}
 		&-bottom {
-			background: url(../img/buildings__white.png) center 108% repeat-x, 
-				$dark_accent;
+			background-position: center 108%;
 		}
 	}
 /*advantages*/
@@ -63,6 +64,83 @@
 		}
 		&__text {
 			font-size: 18px;
+		}
+	}
+
+/*about*/
+	.about {
+		&__title {
+			margin-top: 68px;
+			margin-bottom: 76px;
+		}
+		&__item {
+			img {
+				position: relative;
+				max-width: 220px;
+				top: 5px;
+				left: 5px;
+				padding-left: 10px;
+				margin-right: 50px;
+			}
+		}
+		&__circle {
+			display: none;
+		}
+		&__text {
+			font-size: 16px;
+			line-height: 20px;
+			width: 60%;
+			padding: 0 10px;
+		}
+		&__inner {
+			padding-bottom: 85px;
+		}
+	}
+
+/*contacts*/
+
+	.contacts {
+		&__inner {
+			padding: 0 20px;
+		}
+		&__icon-box {
+			padding-top: 32px;
+		}
+		&__form {
+			max-width: 700px;
+			margin-top: 83px;
+		}
+		&__textarea {
+			height: 120px;
+		}
+		&__button {
+			margin-bottom: 80px;
+		}
+	}
+}
+
+
+/*iPhone SE*/
+@media screen and (max-width: 376px) {
+	body .container {
+		width: 375px;
+	}
+
+	/*header*/
+
+	.menu__desktop {
+		display: none;
+	}
+
+	.menu__mobile {
+		display: flex;
+	}
+
+	.menu {
+		&__burger {
+			width: 40px;
+			height: 3px;
+			background-color: #CAC25F;
 		}
 	}
 }
