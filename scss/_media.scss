@@ -56,6 +56,7 @@
 /*advantages*/
 
 	.advantages {
+		min-width: 768px;
 		&__title {
 			padding-top: 98px;
 		}
@@ -190,6 +191,7 @@
 /*services*/
 
 	.services {
+		min-width: 390px;
 		background-color: $dark_shades;
 		&__title {
 			padding-top: 80px;
@@ -211,15 +213,12 @@
 		&__text {
 			font-size: 16px;
 		}
-		&-bottom {
-			background: url(../img/buildings__white.png) center 108% repeat-x, 
-				$dark_shades;
-		}
 	}
 
 /*advantages*/
 
 	.advantages {
+		min-width: 390px;
 		&__title {
 			padding-top: 48px;
 		}
@@ -242,6 +241,7 @@
 
 /*about*/
 	.about {
+		min-width: 390px;
 		&__inner {
 			flex-direction: column;
 			justify-content: center;
@@ -276,6 +276,7 @@
 
 /*contacts*/
 	.contacts {
+		min-width: 390px;
 		&__form {
 			max-width: 300px;
 			margin-top: 70px;

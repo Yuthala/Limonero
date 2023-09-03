@@ -1,0 +1,15 @@
+.portfolio {
+	background-color: $dark_accent;
+	min-width: 1200px;
+	&__title {
+		padding-top: 127px;
+		margin-bottom: 90px;
+		color: $light_shades;
+		margin-block-start: 0;
+	}
+	&-bottom {
+		height: 150px;
+		background: url(../img/buildings__white.png) center 100% repeat-x, 
+			$dark_accent;
+	}
+}
