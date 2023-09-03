@@ -1,3 +1,4 @@
+
 /*iPad*/
 
 @media screen and (max-width: 769px) {
@@ -38,6 +39,7 @@
 
 /*services*/
 	.services {
+		min-width: 768px;
 		&__inner {
 			grid-gap: 30px;
 			grid-template-columns: max-content;
@@ -69,6 +71,7 @@
 
 /*about*/
 	.about {
+		min-width: 768px;
 		&__title {
 			margin-top: 68px;
 			margin-bottom: 76px;
@@ -100,6 +103,7 @@
 /*contacts*/
 
 	.contacts {
+		min-width: 768px;
 		&__inner {
 			padding: 0 20px;
 		}
@@ -116,6 +120,10 @@
 		&__button {
 			margin-bottom: 80px;
 		}
+	}
+/*footer*/
+	.policy {
+		margin-top: 20px;
 	}
 }
 

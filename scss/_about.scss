@@ -1,4 +1,5 @@
 .about {
+	min-width: 1200px;
 	padding-top: 88px;
 	padding-left: 20px;
 	&__title {
@@ -32,6 +33,7 @@
 		font-size: 18px;
 		line-height: 22px;
 		color: $dark_shades;
+		padding-right: 20px;
 	}
 
 }
