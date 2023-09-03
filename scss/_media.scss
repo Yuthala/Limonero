@@ -53,6 +53,24 @@
 			background-position: center 108%;
 		}
 	}
+
+/*slider*/
+.slider {
+	min-width: 768px;
+	&__title {
+		padding-top: 97px;
+		margin-bottom: 70px;
+	}
+	&-item img {
+		height: 600px;
+	}
+}
+
+.wrap {
+	max-width: 400px;
+}
+
+
 /*advantages*/
 
 	.advantages {
@@ -214,6 +232,31 @@
 			font-size: 16px;
 		}
 	}
+
+/*slider*/
+.slider {
+	min-width: 390px;
+	&__title {
+		padding-top: 80px;
+		margin-bottom: 60px;
+	}
+	&-item img {
+		height: 400px;
+	}
+}
+
+.wrap {
+	max-width: 300px;
+}
+
+.slider .wrap .prev {
+	width: 50px;
+}
+
+.slider .wrap .next {
+	width: 50px;
+}
+
 
 /*advantages*/
 
