@@ -2,6 +2,8 @@ window.addEventListener('DOMContentLoaded', function() { //загрузка ко
 
 	'use strict';
 	
+
+		/*слайдер*/
 		let slideIndex = 1,  //Индекс слайда
 		slides = document.querySelectorAll('.slider-item'), //получаем со страницы все <div> с изображениями
 		prev = document.querySelector('.prev'), //получаем элементы управления слайдером (вперед-назад)
