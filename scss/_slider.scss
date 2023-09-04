@@ -1,3 +1,20 @@
+/*keyframes*/
+@keyframes Appearance {
+	0% {
+		opacity: .6;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+.wrap {
+	position: relative;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
 .slider {
 	background-color: $dark_accent;
 	min-width: 1200px;
@@ -12,44 +29,23 @@
 		background: url(../img/buildings__white.png) center 100% repeat-x, 
 			$dark_accent;
 	}
-}
-
-.wrap {
-	position: relative;
-	max-width: 600px;
-	margin: 0 auto;
-}
-
-.slider-item {
-	display: none;
-	transition: 1.2s ease-in-out;
-}
-
-.slider-item img {
-	width: 100%;
-	height: 700px;
-	object-fit: cover;
-	animation-name: Appearance;
-	animation-duration: 1s;
-	animation-timing-function: cubic-bezier(.1, -.6, .2, 0);
-}
-
-@keyframes Appearance {
-	0% {
-		opacity: .6;
+	&-item {
+		display: none;
+		transition: 1.2s ease-in-out;
+		img {
+			width: 100%;
+			height: 700px;
+			object-fit: cover;
+			animation-name: Appearance;
+			animation-duration: 1s;
+			animation-timing-function: cubic-bezier(.1, -.6, .2, 0);
+		}
+		&-active {
+			display: block;
+			transition: 1.2s ease-in-out;
+		}
 	}
-	100% {
-		opacity: 1;
-	}
-}
-
-
-.slider-item-active {
-	display: block;
-	transition: 1.2s ease-in-out;
-}
-
-.slider-dots {
+	&-dots {
 		width: 90%;
 		margin: 0 auto;
 		margin-top: 50px;
@@ -62,24 +58,26 @@
 		-webkit-justify-content: center;
 			-ms-flex-pack: center;
 		justify-content: center;
-}
-.slider-dots .dot {
-		cursor: pointer;
-		height: 16px;
-		width: 16px;
-		margin: 0 10px;
-		background-color: $light_accent;
-		border-radius: 50%;
-		display: inline-block;
-		-webkit-transition: background-color 0.6s ease;
-		transition: background-color 0.6s ease;
 	}
+}
 
-.slider-dots .dot-active {
-		background-color: $dark_shades;
-		height: 18px;
-		width: 18px;
-	}	
+.dot {
+	cursor: pointer;
+	height: 16px;
+	width: 16px;
+	margin: 0 10px;
+	background-color: $light_accent;
+	border-radius: 50%;
+	display: inline-block;
+	-webkit-transition: background-color 0.6s ease;
+	transition: background-color 0.6s ease;
+}
+
+.dot-active {
+	background-color: $dark_shades;
+	height: 18px;
+	width: 18px;
+}	
 
 .slider .wrap .prev {
 		position: absolute;
