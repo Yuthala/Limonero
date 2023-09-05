@@ -1,3 +1,33 @@
+.thin, .medium, .big {
+	color: $dark_shades;
+}
+
+.thin {
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 200;
+}
+
+.medium {
+	font-size: 32px;
+	line-height: 46px;
+	font-weight: 400;
+}
+
+.big {
+	font-size: 40px;
+	line-height: 52px;
+	font-weight: 600;
+}
+
+.gray {
+	color: $dark_accent;
+	text-transform: uppercase;
+	font-size: 36px;
+	line-height: 52px;
+}
+
+
 
 .menu__mobile {
 	display: none;
@@ -77,6 +107,27 @@
 			text-transform: uppercase;
 		}
 	
+	}
+}
+
+.subheader {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 120px;
+	&__item {
+		width: 260px;
+		height: 260px;
+		border: 4px solid $light_accent;
+		border-radius: 40px;
+		padding: 10px;
+	}
+	&__text {
+		text-align: center;
+		font-size: 32px;
+		font-weight: 200;
+		text-transform: uppercase;
+		color: $dark_shades;
+		margin-bottom: 60px;
 	}
 }
 
