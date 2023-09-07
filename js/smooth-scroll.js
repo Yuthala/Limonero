@@ -70,6 +70,6 @@
     
     var getScrollTopDocument = function()
     {
-        return window.pageYOffset !== undefined ? window.pageYOffset : document.documentElement.scrollTop !== undefined ? document.documentElement.scrollTop : document.body.scrollTop;
+        return window.scrollY !== undefined ? window.scrollY : document.documentElement.scrollTop !== undefined ? document.documentElement.scrollTop : document.body.scrollTop;
     };
 })(window);

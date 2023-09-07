@@ -60,5 +60,37 @@ window.addEventListener('DOMContentLoaded', function() { //загрузка ко
 				}
 			}
 		});
+
+		//добавить класс active к текущей ссылке
+
+		const links = document.querySelectorAll('.menu__item');
+		console.log(`массив links ${links}`);
+		let menu = document.querySelector('.menu');
+		console.log(`переменная menu ${menu}`);
+		let menuItems = document.querySelectorAll('.menu__item-link');
+		console.log(`переменная menuItems ${menuItems}`);
+
+		menu.addEventListener('click', function(event) {
+			let target = event.target;
+			console.log(`переменная target ${target}`);
+			if (target && target.classList.contains('menu__item-link')) { //делегируем событие click "обертке" табов
+				console.log(`test passed`);
+				for(let i = 0; i < menuItems.length; i++) {
+					if (target == menuItems[i]) { //если выбран таб с индексом [i]
+						removeActive();// прячем все табы, начиная с первого ([0])
+						//показываем таб с соответствующим индексом ([1])
+						links[i].classList.add('active');
+						break;
+					}
+				}
+			}
+		})
 	
+		function removeActive() {
+			for (let i = 0; i < menuItems.length; i++) { //условие, что пока i < количества табов
+				//tabContent[i].classList.remove('show'); //убираем класс show у текущего таба
+				//tabContent[i].classList.add('hide'); //добавляем текущему табу класс hide
+				links[i].classList.remove('active'); //убираем класс active у псевдоэлемента названия таба
+			}
+		}
 	});
