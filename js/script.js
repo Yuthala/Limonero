@@ -1,3 +1,6 @@
+//TO DO:
+//1. Разобраться почему класс current не добавляется к мобильному меню
+
 window.addEventListener('DOMContentLoaded', function() { //загрузка кода после того как загружены элементы DOM-дерева
 
 	'use strict';
@@ -61,7 +64,7 @@ window.addEventListener('DOMContentLoaded', function() { //загрузка ко
 			}
 		});
 
-		//добавить класс active к текущей ссылке
+		//добавить класс current к текущей ссылке
 
 		const links = document.querySelectorAll('.menu__item');
 		console.log(`массив links ${links}`);
@@ -77,34 +80,34 @@ window.addEventListener('DOMContentLoaded', function() { //загрузка ко
 				console.log(`test passed`);
 				for(let i = 0; i < menuItems.length; i++) {
 					if (target == menuItems[i]) { //если выбран таб с индексом [i]
-						removeActive();// прячем все табы, начиная с первого ([0])
+						removeCurrent();// прячем все табы, начиная с первого ([0])
 						//показываем таб с соответствующим индексом ([1])
-						links[i].classList.add('active');
+						links[i].classList.add('current');
 						break;
 					}
 				}
 			}
 		})
 	
-		function removeActive() {
+		function removeCurrent() {
 			for (let i = 0; i < menuItems.length; i++) { //условие, что пока i < количества табов
 				//tabContent[i].classList.remove('show'); //убираем класс show у текущего таба
 				//tabContent[i].classList.add('hide'); //добавляем текущему табу класс hide
-				links[i].classList.remove('active'); //убираем класс active у псевдоэлемента названия таба
+				links[i].classList.remove('current'); //убираем класс current у псевдоэлемента названия таба
 			}
 		}
 
 		//меню гамбургер
-		const menuBurger = document.querySelector('.menu__burger'),
-      	menuMobile = document.querySelector('.menu__mobile'),
-      	closeElem = document.querySelector('.menu__close');
+		const hamburger = document.querySelector('.menu__burger'),
+			menuMobile = document.querySelector('.menu__mobile'),
+			closeElem = document.querySelector('.menu__close');
 
-		menuBurger.addEventListener('click', () => {
-			menuMobile.classList.add('vis');
+		hamburger.addEventListener('click', () => {
+			menuMobile.classList.add('active');
 		});
 
 		closeElem.addEventListener('click', () => {
-			menuMobile.classList.remove('vis');
+			menuMobile.classList.remove('active');
 		});
 
 	});

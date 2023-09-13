@@ -58,9 +58,12 @@
 			text-decoration: none;
 		}
 	}
+	&__burger {
+		display: none;
+	}
 }
 
-.active a {
+.current a {
 	color: $dark_shades;
 	font-weight: 600;
 	text-decoration: none;
@@ -131,7 +134,7 @@
 	}
 }
 
-.menu__burger {
+/*.menu__burger {
 	position: absolute;
 	top: 20px;
 	right: 30px;
@@ -156,4 +159,4 @@
 	left: 0;
 	visibility: visible;
 	opacity: 1;
-}
+}*/
