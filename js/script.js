@@ -93,4 +93,18 @@ window.addEventListener('DOMContentLoaded', function() { //загрузка ко
 				links[i].classList.remove('active'); //убираем класс active у псевдоэлемента названия таба
 			}
 		}
+
+		//меню гамбургер
+		const menuBurger = document.querySelector('.menu__burger'),
+      	menuMobile = document.querySelector('.menu__mobile'),
+      	closeElem = document.querySelector('.menu__close');
+
+		menuBurger.addEventListener('click', () => {
+			menuMobile.classList.add('vis');
+		});
+
+		closeElem.addEventListener('click', () => {
+			menuMobile.classList.remove('vis');
+		});
+
 	});
