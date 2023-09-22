@@ -133,4 +133,41 @@
 	}
 }
 
+#toTop {
+	position: fixed;
+	right: 305px;
+	bottom: 40px;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 50px;
+	opacity: 0;
+	visibility: hidden;
+	svg {
+		fill: #E8BD56;
+		path {
+			stroke: #212357;
+		}
+	transition: all .3s ease-in-out;
+	}
+	&:hover {
+		svg {
+			fill: #212357;
+			path {
+				stroke: #E8BD56;
+			}
+		}
+	transform: scale(1.25);
+	transition: all .3s ease-in-out;
+	}
+}
+
+#toTop.show {
+	opacity: 1;
+	visibility: visible;
+	transition: all .7s ease-in-out;
+}
 
