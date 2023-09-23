@@ -277,6 +277,11 @@
 	footer {
 		min-width: 680px;
 	}
+	.footer__author {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}	
 	.policy {
 		margin-top: 20px;
 	}
@@ -290,7 +295,7 @@
 		right: 5px;
 	}
 	.header, .subheader, .menu, .services, .advantages, .slider, .about, .contacts, footer {
-		min-width: 390px;
+		min-width: 500px;
 	}
 
 	.header {
@@ -312,27 +317,26 @@
 		&__text {
 			display: block;
 			font-size: 22px;
-			max-width: 80%;
+			font-weight: 400;
+			max-width: 90%;
 			margin: 0 auto;
 			margin-top: 20px;
 		}
 	}
 	.contacts {
 		&__form {
-			max-width: 340px;
+			max-width: 520px;
 		}
 	}
 }
 
-
-
-/*iPhone SE*/
-@media screen and (max-width: 391px) {
+@media screen and (max-width: 600px) {
 	body .container {
 		width: 390px;
 	}
-
-/*header*/
+	.header, .subheader, .menu, .services, .advantages, .slider, .about, .contacts, footer {
+		min-width: 390px;
+	}
 
 	.menu {
 		flex-direction: column;
@@ -429,32 +433,7 @@
 			opacity: .75;
 		}
 	}
-
-	/*.menu {
-		&__burger {
-			width: 40px;
-			height: 3px;
-			background-color: #CAC25F;
-			position: relative;
-			&::after {
-				content: '';
-				width: 30px;
-				height: 3px;
-				background-color: #CAC25F;
-				position: absolute;
-				bottom: -10px;
-			}
-			&::before {
-				content: '';
-				width: 30px;
-				height: 3px;
-				background-color: #CAC25F;
-				position: absolute;
-				top: -10px;
-			}
-		}
-	}*/
-
+	
 	.header {
 		&__title {
 			font-size: 32px;
@@ -465,7 +444,67 @@
 			margin-bottom: 76px;
 		}
 	}
+	.advantages {
+		&__item {
+			img {
+				max-width: 160px;
+			}
+		}
+	}
+	.about {
+		min-width: 390px;
+		&__inner {
+			flex-direction: column;
+			justify-content: center;
+			padding-bottom: 80px;
+			gap: 40px;
+		}
+		&__item {
+			position: relative;
+			img {
+				max-width: 300px;
+				margin-right: 0;
+				margin: 0 auto;
+			}
+		}
+		&__circle {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 10px;
+			z-index: -1;
+			width: 310px;
+			height: 310px;
+			border-radius: 50%;
+			background-color: $light_accent;
+		}
+		&__text {
+			text-align: center;
+			width: 90%;
+			padding: 0 20px;
+		}
+	}
+	.contacts {
+		&__icon-box {
+			max-width: 320px;
+		}
+		&__item {
+			img {
+				width: 50px;
+			}
+		}
+		&__form {
+			max-width: 360px;
+			margin-top: 45px;
+		}
+	}
+}
 
+/*iPhone SE*/
+@media screen and (max-width: 391px) {
+	body .container {
+		width: 390px;
+	}
 .subheader {
 	flex-direction: column;
 	gap: 50px;
@@ -556,7 +595,6 @@
 	width: 50px;
 }
 
-
 /*advantages*/
 
 	.advantages {
@@ -580,41 +618,6 @@
 			padding-top: 12px;
 		}
 	}	
-
-/*about*/
-	.about {
-		min-width: 390px;
-		&__inner {
-			flex-direction: column;
-			justify-content: center;
-			padding-bottom: 80px;
-			gap: 40px;
-		}
-		&__item {
-			position: relative;
-			img {
-				max-width: 300px;
-				margin-right: 0;
-				margin: 0 auto;
-			}
-		}
-		&__circle {
-			display: block;
-			position: absolute;
-			top: 0;
-			left: 10px;
-			z-index: -1;
-			width: 310px;
-			height: 310px;
-			border-radius: 50%;
-			background-color: $light_accent;
-		}
-		&__text {
-			text-align: center;
-			width: 90%;
-			padding: 0 20px;
-		}
-	}
 
 /*contacts*/
 	.contacts {
