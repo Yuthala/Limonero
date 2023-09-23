@@ -135,7 +135,7 @@
 
 #toTop {
 	position: fixed;
-	right: 305px;
+	right: 155px;
 	bottom: 40px;
 	border: none;
 	cursor: pointer;
@@ -146,18 +146,18 @@
 	height: 50px;
 	opacity: 0;
 	visibility: hidden;
-	svg {
-		fill: #E8BD56;
-		path {
-			stroke: #212357;
-		}
 	transition: all .3s ease-in-out;
+	svg {
+		fill: #CAC25F;
+		path {
+			stroke: #3E3E4A;
+		}
 	}
 	&:hover {
 		svg {
-			fill: #212357;
+			fill: #3E3E4A;
 			path {
-				stroke: #E8BD56;
+				stroke: #CAC25F;
 			}
 		}
 	transform: scale(1.25);

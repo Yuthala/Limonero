@@ -110,4 +110,25 @@ window.addEventListener('DOMContentLoaded', function() { //загрузка ко
 			menuMobile.classList.remove('active');
 		});
 
+		//smooth scroll up
+	let btn = document.querySelector('#toTop');
+    window.addEventListener('scroll', function () {
+        // Если прокрутили дальше 800px, показываем кнопку
+        if (scrollY > 800) {
+            btn.classList.add('show');
+            // Иначе прячем
+        } else {
+            btn.classList.remove('show');
+        }
+    });
+
+    // При клике прокручиваем на самый верх
+	btn.addEventListener('click', function(click) {
+		click.preventDefault();
+		window.scrollTo({
+			top: 0, //scroll to the top of the page, edit if necessary
+			behavior: "smooth"
+		});
 	});
+
+});

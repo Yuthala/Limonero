@@ -1,4 +1,66 @@
 
+
+@media screen and (max-width: 1199px) {
+	body .container {
+		width: 900px;
+	}
+	#toTop {
+		right: 70px;
+	}
+	.services {
+		min-width: 900px;
+		&__item {
+			width: 340px;
+			height: 322px;
+		}
+		&__inner {
+			grid-gap: 130px;
+		}
+	}
+	.advantages {
+		min-width: 900px;
+		&__title {
+			padding-top: 98px;
+		}
+		&__inner {
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat (3, 1fr);
+			padding-top: 32px;
+		}
+		&__text {
+			font-size: 18px;
+		}
+	}
+	.about {
+		min-width: 900px;
+		padding-left: 50px;
+		&__item {
+			img {
+				max-width: 300px;
+				margin-right: 60px;
+			}
+		}
+		&__circle {
+			top: -5px;
+			left: -5px;
+			width: 310px;
+			height: 310px;
+		}
+		&__text {
+			max-width: 500px;
+		}
+	}
+	.slider {
+		min-width: 900px;
+	}
+	.contacts {
+		min-width: 900px;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+}
+
 /*iPad*/
 
 @media screen and (max-width: 769px) {
