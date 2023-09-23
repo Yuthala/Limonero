@@ -83,6 +83,7 @@
 		flex-direction: column;
 		gap: 50px;
 		align-items: center;
+		justify-content: center;
 		margin-top: 0;
 		&__item {
 			width: 460px;
@@ -129,7 +130,8 @@
 
 /*header*/
 	.menu {
-		max-width: 700px;
+		max-width: 680px;
+		padding: 0;
 		&__item {
 			font-size: 14px;
 			line-height: 17px;
@@ -142,8 +144,6 @@
 			}
 			img {
 				width: 70px;
-				padding-right: 0;
-				margin: 0;
 			}
 		}
 	}
@@ -259,10 +259,11 @@
 			padding: 0 20px;
 		}
 		&__icon-box {
+			max-width: 420px;
 			padding-top: 32px;
 		}
 		&__form {
-			max-width: 600px;
+			max-width: 540px;
 			margin-top: 83px;
 		}
 		&__textarea {
@@ -280,6 +281,49 @@
 		margin-top: 20px;
 	}
 }
+
+@media screen and (max-width: 680px) {
+	body .container {
+		width: 600px;
+	}
+	#toTop {
+		right: 5px;
+	}
+	.header, .subheader, .menu, .services, .advantages, .slider, .about, .contacts, footer {
+		min-width: 390px;
+	}
+
+	.header {
+		&__title {
+			font-size: 28px;
+			line-height: 36px;
+			margin-top: 80px;
+		}
+		&__button {
+			margin-bottom: 60px;
+		}
+	}
+	.subheader {
+		margin-bottom: 80px;
+		&__item {
+			width: 320px;
+			height: 220px;
+		}
+		&__text {
+			display: block;
+			font-size: 22px;
+			max-width: 80%;
+			margin: 0 auto;
+			margin-top: 20px;
+		}
+	}
+	.contacts {
+		&__form {
+			max-width: 340px;
+		}
+	}
+}
+
 
 
 /*iPhone SE*/
