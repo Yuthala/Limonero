@@ -33,7 +33,9 @@
 	}
 	.about {
 		min-width: 900px;
-		padding-left: 50px;
+		&__inner {
+			margin-left: 20px;
+		}
 		&__item {
 			img {
 				max-width: 300px;
@@ -58,7 +60,74 @@
 	}
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 920px) {
+	body .container {
+		width: 769px;
+	}
+	#toTop {
+		right: 50px;
+	}
+	.menu {
+		&__item {
+			margin-right: 30px;
+			&:last-child {
+				margin-right: 20px;
+			}
+			img {
+				width: 80px;
+			}
+		}
+	}
+	.subheader {
+		&__item {
+			width: 200px;
+			height: 200px;
+		}
+	}
+	.thin {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	.medium {
+		font-size: 26px;
+		line-height: 34px;
+	}
+	.big {
+		font-size: 32px;
+		line-height: 42px;
+	}
+	.gray {
+		font-size: 30px;
+		line-height: 42px;
+	}
+	.services {
+		min-width: 769px;
+		&__item {
+			width: 250px;
+			height: 400px;
+		}
+		&__inner {
+			grid-gap: 80px;
+		}
+	}
+	.slider {
+		min-width: 769px;
+	}
+	.advantages {
+		min-width: 769px;
+	}
+	.about {
+		min-width: 769px;
+		&__text {
+			max-width: 350px;
+		}
+	}
+	.contacts {
+		min-width: 769px;
+		&__form {
+			max-width: 670px;
+		}
+	}
 }
 
 /*iPad*/
