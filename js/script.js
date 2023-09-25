@@ -97,20 +97,32 @@ window.addEventListener('DOMContentLoaded', function() { //загрузка ко
 			}
 		}
 
-		//меню гамбургер
-		const hamburger = document.querySelector('.menu__burger'),
-			menuMobile = document.querySelector('.menu__mobile'),
-			closeElem = document.querySelector('.menu__close');
+	//меню гамбургер
+	const hamburger = document.querySelector('.menu__burger'),
+		menuMobile = document.querySelector('.menu__mobile'),
+		closeElem = document.querySelector('.menu__close'),
+		menuWrap = document.querySelectorAll('.menu')[1],
+		menuItem = document.querySelectorAll('.menu__item-link');
 
-		hamburger.addEventListener('click', () => {
-			menuMobile.classList.add('active');
-		});
+	hamburger.addEventListener('click', () => {
+		menuMobile.classList.add('active');
+	});
 
-		closeElem.addEventListener('click', () => {
-			menuMobile.classList.remove('active');
-		});
+	menuWrap.addEventListener('click', function (event) {
+		for (let i = 0; i < menuItem.length; i++) {
+			if (event.target.classList.contains('menu__item-link')) {
+				menuMobile.classList.remove('active');
+			}
+		}
+	});
 
-		//smooth scroll up
+	closeElem.addEventListener('click', () => {
+		menuMobile.classList.remove('active');
+	});
+
+
+
+	//smooth scroll up
 	let btn = document.querySelector('#toTop');
     window.addEventListener('scroll', function () {
         // Если прокрутили дальше 800px, показываем кнопку
