@@ -7,7 +7,9 @@ window.addEventListener('DOMContentLoaded', function() { //загрузка ко
 	
 
 		/*слайдер*/
-		
+		let slideIndex = 1,  //Индекс слайда
+		slides = document.querySelectorAll('.slider-item'), //получаем со страницы все <div> с изображениями
+		dots = document.querySelectorAll('.dot'), //получаем точки
 		prev = document.querySelector('.prev'), //получаем элементы управления слайдером (вперед-назад)
 		next = document.querySelector('.next'), 
 		dotsWrap = document.querySelector('.slider-dots');//получаем "обертку" точек
@@ -18,9 +20,6 @@ window.addEventListener('DOMContentLoaded', function() { //загрузка ко
 
 		//функция, показывающая и скрывающая слайды и точки
 		function showSlides() {
-			let slideIndex = 1,  //Индекс слайда
-			slides = document.querySelectorAll('.slider-item'), //получаем со страницы все <div> с изображениями
-			dots = document.querySelectorAll('.dot'); //получаем точки
 
 			if (slideIndex > slides.length) { //если мы дошли до последнего слайда
 				slideIndex = 1; //показываем первый слайд
