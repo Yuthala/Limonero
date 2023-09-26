@@ -7,25 +7,27 @@ window.addEventListener('DOMContentLoaded', function() { //загрузка ко
 	
 
 		/*слайдер*/
-		let slideIndex = 1,  //Индекс слайда
-		slides = document.querySelectorAll('.slider-item'), //получаем со страницы все <div> с изображениями
+		
 		prev = document.querySelector('.prev'), //получаем элементы управления слайдером (вперед-назад)
 		next = document.querySelector('.next'), 
-		dotsWrap = document.querySelector('.slider-dots'),//получаем "обертку" точек
-		dots = document.querySelectorAll('.dot'); //получаем точки
-	
+		dotsWrap = document.querySelector('.slider-dots');//получаем "обертку" точек
+		
+
 		showSlides(slideIndex);//вызываем функцию, которая перелистывает слайдер вручную
 		setInterval(plusSlides, 3000); //вызываем функцию, которая перелистывает слайдер автоматически
 
 		//функция, показывающая и скрывающая слайды и точки
 		function showSlides() {
-	
-				if (slideIndex > slides.length) { //если мы дошли до последнего слайда
-					slideIndex = 1; //показываем первый слайд
-				}
-				if (slideIndex < 1) { //если мы на первом слайде нажимаем стрелку "назад"
-					slideIndex = slides.length; //показываем последний слайд
-				}
+			let slideIndex = 1,  //Индекс слайда
+			slides = document.querySelectorAll('.slider-item'), //получаем со страницы все <div> с изображениями
+			dots = document.querySelectorAll('.dot'); //получаем точки
+
+			if (slideIndex > slides.length) { //если мы дошли до последнего слайда
+				slideIndex = 1; //показываем первый слайд
+			}
+			if (slideIndex < 1) { //если мы на первом слайде нажимаем стрелку "назад"
+				slideIndex = slides.length; //показываем последний слайд
+			}
 	
 			slides.forEach((item) => item.classList.remove('slider-item-active')); //скрываем все слайды
 			dots.forEach((item) => item.classList.remove('dot-active')); //скрываем точки
