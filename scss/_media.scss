@@ -332,10 +332,10 @@
 
 @media screen and (max-width: 600px) {
 	body .container {
-		width: 390px;
+		width: 520px;
 	}
 	.header, .subheader, .menu, .services, .advantages, .slider, .about, .contacts, footer {
-		min-width: 390px;
+		min-width: 520px;
 	}
 
 	.menu {
@@ -365,8 +365,6 @@
 			opacity: 0;
 			transition: all .6s;
 			display: block;
-			/*justify-content: space-between;
-			align-items: center;*/
 			img {
 				width: 90px;
 			}
@@ -503,51 +501,55 @@
 /*iPhone SE*/
 @media screen and (max-width: 391px) {
 	body .container {
-		width: 390px;
+		width: 360px;
 	}
-.subheader {
-	flex-direction: column;
-	gap: 50px;
-	align-items: center;
-	&__item {
-		padding: 15px;
+
+	.header, .subheader, .menu, .services, .advantages, .slider, .about, .contacts, footer {
+		min-width: 360px;
 	}
-	&__text {
-		font-size: 28px;
-		margin-bottom: 40px;
+
+	.subheader {
+		flex-direction: column;
+		gap: 50px;
+		align-items: center;
+		&__item {
+			padding: 15px;
+		}
+		&__text {
+			font-size: 28px;
+			margin-bottom: 40px;
+			line-height: 36px;
+		}
+	}
+
+	.thin {
+		font-size: 20px;
+		line-height: 26px;
+		font-weight: 200;
+	}
+
+	.medium {
+		font-size: 24px;
+		line-height: 38px;
+		font-weight: 400;
+	}
+
+	.big {
+		font-size: 30px;
 		line-height: 36px;
+		font-weight: 600;
 	}
-}
 
-.thin {
-	font-size: 20px;
-	line-height: 26px;
-	font-weight: 200;
-}
-
-.medium {
-	font-size: 24px;
-	line-height: 38px;
-	font-weight: 400;
-}
-
-.big {
-	font-size: 30px;
-	line-height: 36px;
-	font-weight: 600;
-}
-
-.gray {
-	color: $dark_accent;
-	text-transform: uppercase;
-	font-size: 26px;
-	line-height: 40px;
-}
+	.gray {
+		color: $dark_accent;
+		text-transform: uppercase;
+		font-size: 26px;
+		line-height: 40px;
+	}
 
 /*services*/
 
 	.services {
-		min-width: 390px;
 		background-color: $dark_shades;
 		&__title {
 			padding-top: 80px;
@@ -573,7 +575,6 @@
 
 /*slider*/
 .slider {
-	min-width: 390px;
 	&__title {
 		padding-top: 80px;
 		margin-bottom: 60px;
@@ -598,7 +599,6 @@
 /*advantages*/
 
 	.advantages {
-		min-width: 390px;
 		&__title {
 			padding-top: 48px;
 		}
@@ -621,7 +621,6 @@
 
 /*contacts*/
 	.contacts {
-		min-width: 390px;
 		&__form {
 			max-width: 300px;
 			margin-top: 70px;

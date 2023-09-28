@@ -1,6 +1,6 @@
 //TO DO:
-//1. Разобраться почему класс current не добавляется к мобильному меню
-//2. Пропала кнопка из scroll up
+//2. Пропала кнопка scroll up на мобильной версии
+
 
 window.addEventListener('DOMContentLoaded', function() { //загрузка кода после того как загружены элементы DOM-дерева
 
@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', function() { //загрузка ко
 
 		/*переменные для класса current*/
 		links = document.querySelectorAll('.menu__item'),	
-		menu = document.querySelector('.menu'),
+		menu = document.querySelectorAll('.menu'),
 		menuItems = document.querySelectorAll('.menu__item-link'),
 
 		
@@ -24,7 +24,6 @@ window.addEventListener('DOMContentLoaded', function() { //загрузка ко
 		hamburger = document.querySelector('.menu__burger'),
 		menuMobile = document.querySelector('.menu__mobile'),
 		closeElem = document.querySelector('.menu__close'),
-		menuWrap = document.querySelectorAll('.menu')[1],
 
 		/*переменные для scroll up*/
 		btn = document.querySelector('#toTop');
@@ -61,7 +60,7 @@ window.addEventListener('DOMContentLoaded', function() { //загрузка ко
 
 
 	//добавить класс current к текущей ссылке
-	menu.addEventListener('click', function(event) {
+	menu[0].addEventListener('click', function(event) {
 		let target = event.target;
 		console.log(`переменная target ${target}`);
 		if (target && target.classList.contains('menu__item-link')) { //делегируем событие click "обертке" табов
@@ -75,7 +74,7 @@ window.addEventListener('DOMContentLoaded', function() { //загрузка ко
 				}
 			}
 		}
-	});
+	})
 
 	//меню гамбургер
 
@@ -83,7 +82,7 @@ window.addEventListener('DOMContentLoaded', function() { //загрузка ко
 		menuMobile.classList.add('active');
 	});
 
-	menuWrap.addEventListener('click', function (event) {
+	menu[1].addEventListener('click', function (event) {
 		for (let i = 0; i < menuItems.length; i++) {
 			if (event.target.classList.contains('menu__item-link')) {
 				menuMobile.classList.remove('active');
