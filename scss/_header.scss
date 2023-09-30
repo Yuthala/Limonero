@@ -93,6 +93,9 @@
 		margin: 10px auto 43px;
 	}
 	&__button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		font-family: 'Gilroy';
 		font-size: 16px;
 		font-weight: 400;
