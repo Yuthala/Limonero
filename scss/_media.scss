@@ -272,6 +272,11 @@
 		&__button {
 			margin-bottom: 80px;
 		}
+		&__item {
+			&-link {
+				width: 40px;
+			}
+		}
 	}
 /*footer*/
 	footer {

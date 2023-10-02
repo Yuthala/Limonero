@@ -64,6 +64,11 @@
 		font-size: 40px;
 		color: #CAC25F;
 	}
+	&__social {
+		&-link {
+			width: 30px;
+		}
+	}
 }
 
 .current a {
@@ -143,7 +148,7 @@
 
 #toTop {
 	position: fixed;
-	right: 155px;
+	right: 165px;
 	bottom: 40px;
 	z-index: 10;
 	border: none;
