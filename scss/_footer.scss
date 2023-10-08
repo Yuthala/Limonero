@@ -1,0 +1,30 @@
+.policy {
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+	color: $dark_shades;
+	margin-top: 70px;
+	a {
+		text-decoration: none;
+		color: $dark_shades;
+	}
+}
+
+.warning {
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+	color: $dark_shades;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.footer__author {
+	display: flex;
+	justify-content: space-around;
+}
+.footer__author-text {
+	color: $light_accent;
+	margin-top: 20px;
+}
