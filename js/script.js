@@ -149,6 +149,8 @@ window.addEventListener('DOMContentLoaded', function() { //загрузка ко
     
 		//Form
 
+
+
 		let message = {
 			loading: 'Загрузка...',
 			success: 'Спасибо! Скоро мы с вами свяжемся.',
@@ -194,4 +196,5 @@ window.addEventListener('DOMContentLoaded', function() { //загрузка ко
 						input[i].value ='';
 					}
 			});
+
 });
