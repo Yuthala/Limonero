@@ -21,3 +21,24 @@
 	$body = str_replace('%email%', $email, $body); // строку %email% на почту
 	$body = str_replace('%topic%', $topic, $body); // строку %topic% на тему
 	$body = str_replace('%message%', $message, $body); // строку %message% на сообщение
+
+	$mail->addAddress("finsaniwebsite@mail.ru"); /* Здесь введите Email, куда отправлять */
+	$mail->setFrom($email);
+	$mail->Subject = "[Заявка с формы]"; /* Тема письма */
+	$mail->MsgHTML($body);
+
+	/* Проверяем отправлено ли сообщение */
+	if (!$mail->send()) {
+	$message = "Ошибка отправки";
+	} else {
+	$message = "Данные отправлены!";
+	}
+
+	/* Возвращаем ответ */	
+	$response = ["message" => $message];
+
+	/* Ответ в формате JSON */
+	header('Content-type: application/json');
+	echo json_encode($response);
+
+	?>
