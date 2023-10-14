@@ -236,6 +236,7 @@
 							<a href="mailto:dinavl@bk.ru" target="_blank"><img src="img/email.png" alt="email" class="contacts__item-link"></a>
 						</div>
 					</div>
+
 					<form action="send_mail.php" method="POST" name="form" class="contacts__form">
 						<input 
 							type="text" 
@@ -254,10 +255,11 @@
 						id="email"
       					data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" 
 						required>
-						<label for="email">В формате: name@mail.com</label>
+						<label for="email">В формате: name@mail.com<span> *</span></label>
 						
 						<input type="text" name="topic" class="contacts__topic" placeholder="Тема обращения">
-						<textarea name="message" class="contacts__textarea" placeholder="Ваше сообщение" required></textarea>
+						<label for="message">Обязательное поле<span> *</span></label>
+						<textarea name="message" class="contacts__textarea" id="message" placeholder="Ваше сообщение" required></textarea>
 						<input type="submit" name="submit" id="button" class="contacts__button" value="Отправить">
 					</form>
 				</div>
@@ -279,5 +281,6 @@
 	</footer>
 
 	<script src="js/script.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>

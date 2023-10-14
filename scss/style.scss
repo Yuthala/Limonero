@@ -41,4 +41,7 @@ body {
 
 label {
 	color: $light_accent;
+	span {
+		color: red;
+	}
 }

@@ -36,12 +36,13 @@
 		margin-top: 20px;
 		padding-left: 20px;;
 	}
+	&__topic {
+		margin-bottom: 30px;
+	}
 	&__textarea {
 		margin-bottom: 21px;
-		margin-top: 40px;
 		height: 195px;
 		resize: none;
-		padding: 22px;
 	}
 	&__button {
 		background-color: $light_accent;
@@ -54,4 +55,18 @@
 		cursor: pointer;
 	}
 }
+
+:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+:focus::-moz-placeholder {
+	color: transparent;
+}
+:focus:-moz-placeholder {
+	color: transparent;
+}
+:focus:-ms-input-placeholder {
+	color: transparent;
+}
+
 
