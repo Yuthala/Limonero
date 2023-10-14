@@ -1,6 +1,4 @@
 
-
-
 window.addEventListener('DOMContentLoaded', function() { //загрузка кода после того как загружены элементы DOM-дерева
 
 	'use strict';
@@ -149,7 +147,7 @@ window.addEventListener('DOMContentLoaded', function() { //загрузка ко
     
 		//Form
 
-
+		
 
 		// let message = {
 		// 	loading: 'Загрузка...',

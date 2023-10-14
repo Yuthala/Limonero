@@ -237,11 +237,28 @@
 						</div>
 					</div>
 					<form action="send_mail.php" method="POST" name="form" class="contacts__form">
-						<input type="text" name="name" class="contacts__name" placeholder="Ваше имя">
-						<input type="email" name="email" class="contacts__email" placeholder="Ваш e-mail">
+						<input 
+							type="text" 
+							name="name" 
+							class="contacts__name" 
+							placeholder="Ваше имя"
+							id="name"
+                			data-reg="^[А-ЯЁ][а-яё]*$">
+						<label for="name">Только русские буквы</label>
+
+						<input 
+						type="email" 
+						name="email" 
+						class="contacts__email" 
+						placeholder="Ваш e-mail"
+						id="email"
+      					data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" 
+						required>
+						<label for="email">В формате: name@mail.com</label>
+						
 						<input type="text" name="topic" class="contacts__topic" placeholder="Тема обращения">
-						<textarea name="message" class="contacts__textarea" placeholder="Ваше сообщение"></textarea>
-						<input type="submit" name="submit" class="contacts__button" value="Отправить">
+						<textarea name="message" class="contacts__textarea" placeholder="Ваше сообщение" required></textarea>
+						<input type="submit" name="submit" id="button" class="contacts__button" value="Отправить">
 					</form>
 				</div>
 			</div>
