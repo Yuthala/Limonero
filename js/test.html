@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JavaScript Ajax POST Demo</title>
+<script>
+function postComment() {
+    // Создаем объект XMLHttpRequest
+    var request = new XMLHttpRequest();
+    
+    // Создаем объект запроса
+    request.open("POST", "confirmation.php");
+    
+    // Определяем прослушивателя событий для readystatechange
+    request.onreadystatechange = function() {
+        // Проверяем, был ли запрос успешным
+        if(this.readyState === 4 && this.status === 200) {
+            // Вставляем ответ от сервера в HTML-элемент
+            document.getElementById("result").innerHTML = this.responseText;
+        }
+    };
+    
+    // Получяем данных формы
+    var myForm = document.getElementById("myForm");
+    var formData = new FormData(myForm);
+
+    // Отправляем запрос на сервер
+    request.send(formData);
+}
+</script>
+</head>
+<body>
+    <form id="myForm">
+        <label>Имя:</label>
+        <div><input type="text" name="name"></div>
+        <br>
+        <label>Комментарий:</label>
+        <div><textarea name="comment"></textarea></div>
+        <p><button type="button" onclick="postComment()">Отправить комментарий</button></p>
+    </form>    
+    <div id="result">
+        <p>Содержимое поля DIV результата будет заменено ответом сервера</p>
+    </div>    
+</body>
+</html>

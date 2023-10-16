@@ -3,10 +3,13 @@
 const form = document.forms["form"]; // считываем форму
 const formArr = Array.from(form); // формируем массив из элементов формы
 const validFormArr = []; // в этом массиве хранятся поля, которые нужно проверить
-const button = form.elements["button"]; // считываем кнопку
+const button = form.elements["button"], // считываем кнопку
+
+statusMessage = document.createElement('div');
+statusMessage.classList.add('status');
 
 let message = {
-	loading: 'Загрузка...',
+	//loading: 'Загрузка...',
 	success: 'Спасибо! Скоро мы с вами свяжемся.',
 	failure: 'что-то пошло не так...'
 };
@@ -43,6 +46,7 @@ formArr.forEach((el) => {
   // Здесь проверяем, можно ли отправить форму
 function formCheck(e) {
 	e.preventDefault(); // блокируем input
+	form.appendChild(statusMessage);
 	const allValid = []; // создаем массив валидных значений
 	validFormArr.forEach((el) => {
 	  allValid.push(el.getAttribute("is-valid")); // проверяем каждое поле
@@ -60,13 +64,16 @@ function formCheck(e) {
 
   async function formSubmit() {
 	const data = serializeForm(form); // получаем данные формы
-	const response = await sendData(data); // отправляем данные на почту
+	//request.send(data);
+	//const response = await sendData(data); // отправляем данные на почту
 	if (response.ok) {
 	  let result = await response.json(); // если ответ OK отвечает пользователю
-	  alert(result.message); // .. что данные отправлены
+	  //alert(result.message); // .. что данные отправлены
+	  statusMessage.innerHTML = message.success;
 	  formReset(); // сбрасываем поля формы
 	} else {
-	  alert("Код ошибки: " + response.status); // если not OK - показываем код ошибки
+	  //alert("Код ошибки: " + response.status); // если not OK - показываем код ошибки
+	  statusMessage.innerHTML = message.failure;
 	}
   }
   
@@ -76,12 +83,20 @@ function formCheck(e) {
   }
   
   async function sendData(data) {
-	return await fetch("send_mail.php", {
-	  // отправляем в скрипт send_mail.php
-	  method: "POST", // методом POST
-	  body: data,
-	});
+	// return await fetch("send_mail.php", {
+	//   // отправляем в скрипт send_mail.php
+	//   method: "POST", // методом POST
+	//   body: data,
+	// });
+  				let request = new XMLHttpRequest();
+				request.open('POST', 'send_mail.php');
+				request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=utf-8');
+				request.responseType = "text";
+				request.send();
+
   }
+
+
   
   function formReset() {
 	// сброс полей формы
