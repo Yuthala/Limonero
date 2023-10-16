@@ -5,6 +5,12 @@ const formArr = Array.from(form); // формируем массив из эле
 const validFormArr = []; // в этом массиве хранятся поля, которые нужно проверить
 const button = form.elements["button"]; // считываем кнопку
 
+let message = {
+	loading: 'Загрузка...',
+	success: 'Спасибо! Скоро мы с вами свяжемся.',
+	failure: 'что-то пошло не так...'
+};
+
 formArr.forEach((el) => {
 	if (el.hasAttribute("data-reg")) {
 	  el.setAttribute("is-valid", "0");
