@@ -6,6 +6,28 @@
     <title>Form</title>
 </head>
 <body>
-    
+    <div class="form-container">
+        <form method="POST" name="emailContact">
+            <div class="input-row">
+                <label for="">Name<em>*</em></label>
+                <input type="text" name="userName" required>
+            </div>
+            <div class="input-row">
+                <label for="">Email<em>*</em></label>
+                <input type="text" name="userEmail" required>
+            </div>
+            <div class="input-row">
+                <label for="">Phone<em>*</em></label>
+                <input type="tel" name="userPhone" required>
+            </div>
+            <div class="input-row">
+                <label for="">Message<em>*</em></label>
+                <textarea name="userMessage" required></textarea>
+            </div>
+            <div class="input-row">
+                <input type="submit" name="send" required>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
