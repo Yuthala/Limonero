@@ -113,4 +113,41 @@
   </div>
     </section>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $('#submit-btn').click(function(event){
+    event.preventDefault();
+     $.ajax({
+        dataType: 'JSON',
+        url: 'sendmail.php',
+        type: 'POST',
+        data: $('#contact').serialize(),
+        beforeSend: function(xhr){
+          $('#submit-btn').html('SENDING...');
+        },
+        success: function(response){
+          if(response){
+            console.log(response);
+            if(response['isSuccess']){
+             $('#msg').html('<div class="alert alert-success">'+ response['msg']  +'</div>');
+              $('input, textarea').val(function() {
+                 return this.defaultValue;
+              });
+            }
+            else{
+              $('#msg').html('<div class="alert alert-danger">'+ response['msg'] +'</div>');
+            }
+          }
+        },
+        error: function(){
+          $('#msg').html('<div class="alert alert-danger">Errors occur. Please try again later.</div>');
+        },
+        complete: function(){
+          $('#submit-btn').html('SEND MESSAGE');
+        }
+      });
+  });
+});
+</script>
 </html>
