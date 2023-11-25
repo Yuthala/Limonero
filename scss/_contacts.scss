@@ -24,6 +24,13 @@
 		input {
 			height: 52px;
 		}
+		&__policy {
+			white-space: nowrap;
+			display: inline;
+			a {
+				color: $light_accent;
+			}
+		}
 	}
 	&__item {
 		text-align: center;

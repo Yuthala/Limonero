@@ -1,49 +1,39 @@
-// 'use strict';
+window.addEventListener('DOMContentLoaded', function() {
 
-// const form = document.forms["form"];
-// const formArr = Array.from(form);
-// const validFormArr = [];
-// const button = form.elements["button"];
-
-// formArr.forEach((el) => {
-//   if (el.hasAttribute("data-reg")) {
-//     el.setAttribute("is-valid", "0");
-//     validFormArr.push(el);
-//   }
-// });
-
-// form.addEventListener("input", inputHandler);
-// button.addEventListener("click", buttonHandler);
-
-// function inputHandler({ target }) {
-//   if (target.hasAttribute("data-reg")) {
-//     inputCheck(target);
-//   }
-// }
-
-// function inputCheck(el) {
-//   const inputValue = el.value;
-//   const inputReg = el.getAttribute("data-reg");
-//   const reg = new RegExp(inputReg);
-//   if (reg.test(inputValue)) {
-//     el.setAttribute("is-valid", "1");
-//     el.style.border = "2px solid rgb(0, 196, 0)";
-//   } else {
-//     el.setAttribute("is-valid", "0");
-//     el.style.border = "2px solid rgb(255, 0, 0)";
-//   }
-// }
-
-// function buttonHandler(e) {
-//   const allValid = [];
-//   validFormArr.forEach((el) => {
-//     allValid.push(el.getAttribute("is-valid"));
-//   });
-//   const isAllValid = allValid.reduce((acc, current) => {
-//     return acc && current;
-//   });
-
-//   if (!Boolean(Number(isAllValid))) {
-//     e.preventDefault();
-//   }
-// }
+	// Функция отправки формы fetch
+	async function postData(url= '', data = {}) {
+		const response = await fetch(url, {
+			method: "POST",
+			body: data
+		});
+		return await response.json();
+	}
+	
+	// отправка
+	let form = document.getElementById('form'); // переменная с формой
+	// при отправке формы любым способом
+	form.addEventListener('submit', function (event) {
+		// запрещаем стандартное действие
+		event.preventDefault();
+		// создаем объект FormData
+		let data = new FormData(form);
+		console.log([data]);
+		// передаем в фукцию fetch данные и получаем результат
+		postData('send.php', data).then((data) => {
+			let result = document.getElementById('result');
+			// обработка ответа от сервера
+			if (data.error == '') {
+					// Очищаем поля формы и выводим пользователю сообщение обуспешной отправке
+					event.target.reset();
+					result.style.color = 'green';
+					result.textContent = "Ваше сообщение успешно отправлено";
+			} else {
+				result.style.color = 'red';
+				result.textContent = "При отправке формы произошла ошибка";
+			}
+		})
+	})
+	
+	});
+	
+	
