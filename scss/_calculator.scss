@@ -24,4 +24,17 @@
 		gap: 40px;
 		justify-content: start;
 	}
+	// &__table {
+	// 	th, tr {
+	// 		border: 1px solid black;
+	// 	}
+
+	// }
+}
+
+
+.machine-knit__table {
+	th, tr, td {
+		border: 1px solid black;
+	}
 }
