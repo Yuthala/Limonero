@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.min.css">
+
 </head>
 <body>
 	<header class="header">
@@ -105,21 +106,33 @@
 
 				<div>
 					<p>Если вам известен метраж пряжи, у вас изделие гладью или обычной резинкой, из стандартной пряжи (средней толщины, без пайеток), без узоров, полос, роспусков, сложных резинок (жемучужная, английская), стоимость изготовления будет равна стоимости по калькулятору.  Фурнитура оплачивается отдельно. </p> 
+					<div class="dividerTable"></div>
 					<p>Ажурные вставки, сложные резинки, узоры, молнии, увеличивают стоимость изготовления. Наценки к стандартной стоимости приведены в таблице ниже.</p>
 				</div>
 
-				<table class="machine-knit__table">
-					<thead>
-						<tr>
-							<th>Особенность изготовления</th>
-							<th>Наценка, %</th>
-						</tr>
-					</thead>
-				</table>
-
+				<div class="machine-knit__table">
+					<div class="machine-knit__table-item tableheader">Особенность изготовления</div>
+					<div class="machine-knit__table-item tableheader">Наценка, %</div>
+					<div class="machine-knit__table-item">Горизонтальные полосы до 30% изделия</div>
+					<div class="machine-knit__table-item">10%</div>
+					<div class="machine-knit__table-item">Горизонтальные полосы свыше 30% изделия</div>
+					<div class="machine-knit__table-item">20%</div>
+					<div class="machine-knit__table-item">Жемчужная, английская резинка</div>
+					<div class="machine-knit__table-item">30%</div>
+					<div class="machine-knit__table-item">Узор жаккард</div>
+					<div class="machine-knit__table-item">двухцветный 100% + 10% за каждый дополнительный цвет, наценка только на площадь узора</div>
+					<div class="machine-knit__table-item">Узор интарсия</div>
+					<div class="machine-knit__table-item">двухцветный 100% + 10% за каждый дополнительный цвет, наценка только на площадь узора</div>
+					<div class="machine-knit__table-item">Узор ажурный</div>
+					<div class="machine-knit__table-item">100%, только с площади узора</div>
+					<div class="machine-knit__table-item">Роспуски до 10 шт на изделие</div>
+					<div class="machine-knit__table-item">10%</div>
+					<div class="machine-knit__table-item">Роспуски от до 11 до 20 шт на изделие</div>
+					<div class="machine-knit__table-item">20%</div>
+					<div class="machine-knit__table-item">Изделие с пуговицами и планкой</div>
+					<div class="machine-knit__table-item">20%</div>
+				</div>
 			</div>
-
-
 		</section>
 	</main>
 
