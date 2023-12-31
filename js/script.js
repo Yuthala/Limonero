@@ -23,7 +23,12 @@ window.addEventListener('DOMContentLoaded', function() { //загрузка ко
 		closeElem = document.querySelector('.menu__close'),
 
 		/*переменные для scroll up*/
-		btn = document.querySelector('#toTop');
+		btn = document.querySelector('#toTop'),
+
+		//переменные для калькулятора
+		consumtionInput = document.getElementById('consumption'),
+		priceInput = document.getElementById('price'),
+		itemSelector = document.getElementById('select');
 
 		/*исполняемый код*/
 		showSlides(slideIndex);//вызываем функцию, которая перелистывает слайдер вручную
@@ -112,6 +117,8 @@ window.addEventListener('DOMContentLoaded', function() { //загрузка ко
 		});
 	});
 
+	//Калькулятор
+	
 
 	/*ФУНКЦИИ*/
 		//функция, показывающая и скрывающая слайды и точки

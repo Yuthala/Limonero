@@ -92,12 +92,12 @@
 
 					<div class="machine-knit__item">
 						<label class="machine-knit__label">Расход пряжи в метрах</label>
-						<div class="machine-knit__meters"></div>
+						<div class="machine-knit__meters" id="consumption"></div>
 					</div>
 
 					<div class="machine-knit__item">
 						<label class="machine-knit__label">Стоимость</label>
-						<div class="machine-knit__price"></div>
+						<div class="machine-knit__price" id="price"></div>
 					</div>
 				</div>
 
