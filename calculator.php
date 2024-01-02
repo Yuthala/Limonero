@@ -75,20 +75,27 @@
 				<p>В зависимости от состава пряжи, выбранной вязки, плотности вязания, желаемой толщины полотна, особенностей конкретной модели расход пряжи может отличаться как в большую, так и в меньшую сторону.</p>
 				<p><strong>Приведенная стоимость не включает расчет изделия.</strong></p>
 
+
 				<div class="machine-knit__calculator">
-					<div class="machine-knit__item options-list">
-						<label class="machine-knit__label">Выберите изделие</label>
-						<select id="select">
-							<option value="1500" selected >Базовый джемпер жен., р. 46</option>
-							<option value="1900">Базовый джемпер муж., р. 50</option>
-							<option value="950">Базовый джемпер дет., р. 116</option>
-							<option value="1000">Жилетка, длина 58 см, р. 46</option>
-							<option value="2200">Платье жен., длина 100 см,  р. 46</option>
-							<option value="400">Шапка взросл.</option>
-							<option value="300">Шапка дет.</option>
-							<option value="400">Шарф длина 180 см, шир. 30 см</option>
-						</select>
-					</div>
+
+				<?php
+					$content = '
+						<div class="machine-knit__item options-list">
+							<label class="machine-knit__label">Выберите изделие</label>
+							<select id="select">
+								<option value="1500" selected >Базовый джемпер жен., р. 46</option>
+								<option value="1900">Базовый джемпер муж., р. 50</option>
+								<option value="950">Базовый джемпер дет., р. 116</option>
+								<option value="1000">Жилетка, длина 58 см, р. 46</option>
+								<option value="2200">Платье жен., длина 100 см,  р. 46</option>
+								<option value="400">Шапка взросл.</option>
+								<option value="300">Шапка дет.</option>
+								<option value="400">Шарф длина 180 см, шир. 30 см</option>
+							</select>
+						</div>';
+					echo $content;
+				?>
+
 
 					<div class="machine-knit__item">
 						<label class="machine-knit__label">Расход пряжи в метрах</label>
