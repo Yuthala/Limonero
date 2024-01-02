@@ -147,5 +147,6 @@
 	</footer>
 
 	<script src="js/script.js"></script>
+	<script src="js/calculator.js"></script>
 </body>
 </html>
