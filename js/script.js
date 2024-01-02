@@ -23,12 +23,7 @@ window.addEventListener('DOMContentLoaded', function() { //загрузка ко
 		closeElem = document.querySelector('.menu__close'),
 
 		/*переменные для scroll up*/
-		btn = document.querySelector('#toTop'),
-
-		//переменные для калькулятора
-		consumtionInput = document.getElementById('consumption'),
-		priceInput = document.getElementById('price'),
-		itemSelector = document.getElementById('select');
+		btn = document.querySelector('#toTop');
 
 		/*исполняемый код*/
 		showSlides(slideIndex);//вызываем функцию, которая перелистывает слайдер вручную
