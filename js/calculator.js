@@ -11,12 +11,24 @@ window.addEventListener('DOMContentLoaded', function() {
 	priceInput = document.getElementById('price');//поле для вывода результата расчета стоимости изделия
 
 	/*исполняемый код*/
-	console.log(`переменная itemSelector ${itemSelector}`);
 
-	consumtionInput.innerHTML = itemSelector[0].value;
-	priceCalc = (itemSelector[0].value) * 2;
-	priceInput.innerHTML = priceCalc;
+	showConsumption();
+	showPrice();
 
 	/*EVENT LISTENERS*/
+	itemSelector.addEventListener('change', function() {
+		showConsumption();
+		showPrice();
+	})
 
+	/*Функции*/
+	function showConsumption () {
+		consumptionCalc = itemSelector.value;
+		consumtionInput.innerHTML = consumptionCalc;
+	}
+
+	function showPrice () {
+		priceCalc = (itemSelector.value) * 2;
+		priceInput.innerHTML = priceCalc;
+	}
 })
