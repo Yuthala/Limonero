@@ -69,7 +69,7 @@
 	<main>
 		<section class="machine-knit">
 			<div class="container">
-				<h3 class="machine-knit__header">Машинное вязание</h3>
+				<h2 class="machine-knit__header">Машинное вязание</h2>
 				<p>Стоимость изготовления рассчитывается по метражу расхода пряжи - 2 рубля/метр.</p>
 				<p>Ниже приведена примерная стоимость изготовления изделия без узора из пряжи метражом Nm 32/2 в 3 сложения (из пряжи средней толщины), что соответствует расходу 530 м/100 г.</p>
 				<p>В зависимости от состава пряжи, выбранной вязки, плотности вязания, желаемой толщины полотна, особенностей конкретной модели расход пряжи может отличаться как в большую, так и в меньшую сторону.</p>
@@ -134,7 +134,33 @@
 					<div class="machine-knit__table-item">Роспуски от до 11 до 20 шт на изделие</div>
 					<div class="machine-knit__table-item">20%</div>
 					<div class="machine-knit__table-item">Изделие с пуговицами и планкой</div>
-					<div class="machine-knit__table-item">20%</div>
+					<div class="machine-knit__table-item">не более 10%</div>
+				</div>
+
+				<div class="dividerTable"></div>
+				<h3 class="machine-knit__subheader">Пример расчета</h3>
+				<div class="machine-knit__example">
+					<div class="machine-knit__example-image">
+						<img src="img/jacket.jpg" alt="jacket">
+					</div>
+					<div class="machine-knit__example-table">
+						<div class="machine-knit__example-item tableheader">Жилет оверсайз</div>
+						<div class="machine-knit__example-item">размер 42-44</div>
+						<div class="machine-knit__example-item">Пряжа</div>
+						<div class="machine-knit__example-item">Мохер Mister Joe, 800 м/100 г в 2 сложения</div>
+						<div class="machine-knit__example-item">Вязка</div>
+						<div class="machine-knit__example-item">Промышленная резинка 2х1, планка</div>
+						<div class="machine-knit__example-item">Расход пряжи</div>
+						<div class="machine-knit__example-item">160 г</div>
+						<div class="machine-knit__example-item">Стоимость изготовления</div>
+						<div class="machine-knit__example-item">(400 м * 1,6 ) * 2 р = 640 м * 2 р = 1280 р</div>
+						<div class="machine-knit__example-item">Наценка</div>
+						<div class="machine-knit__example-item">0 (планка только под сторону с пуговицами, без узоров, простая резинка)</div>
+						<div class="machine-knit__example-item">Стоимость фурнитуры</div>
+						<div class="machine-knit__example-item">60 р * 4 шт. = 240 р</div>
+						<div class="machine-knit__example-item tableheader">Итого</div>
+						<div class="machine-knit__example-item">1520 р</div>
+					</div>
 				</div>
 			</div>
 		</section>

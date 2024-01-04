@@ -7,6 +7,14 @@
 		margin-bottom: 27px;
 		text-align: center;
 	}
+	&__subheader {
+		font-size: 24px;
+		font-weight: 400;
+		letter-spacing: 0.02em;
+		color: $light_accent;
+		margin-bottom: 27px;
+		text-align: center;
+	}
 	&__meters, &__price {
 		border: 1px solid $light_accent;
 		height: 10vh;
@@ -31,7 +39,8 @@
 	&__table {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: repeat(10, 10vh);
+		grid-template-rows: repeat(10, 7vh);
+		margin-bottom: 40px;
 		&-item {
 			border: 1px solid $light_accent;
 			padding-left: 10px;
@@ -49,6 +58,31 @@
 		}
 		&-item:nth-child(10), :nth-child(12) {
 			padding-top: 1vh;
+		}
+	}
+	&__example {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		//grid-template-rows: repeat();
+		&-image {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img {
+				display: block;
+				width: 20vw;
+			}
+
+		}
+		&-table {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: repeat(8, 8vh);
+			//justify-content: center;
+			//align-items: center;
+		}
+		&-item {
+			border-bottom: 2px dashed $dark_shades;
 		}
 	}
 }
