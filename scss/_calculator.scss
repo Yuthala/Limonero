@@ -44,7 +44,7 @@
 		&-item {
 			border: 1px solid $light_accent;
 			padding-left: 10px;
-			padding-top: 3vh;
+			padding-top: 2vh;
 			padding-bottom: 3vh;
 		}
 		&-item:nth-child(odd) {
@@ -68,9 +68,10 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			margin-right: 5vw;
 			img {
 				display: block;
-				width: 20vw;
+				width: 25vw;
 			}
 
 		}
@@ -83,6 +84,7 @@
 		}
 		&-item {
 			border-bottom: 2px dashed $dark_shades;
+			padding-top: 2vh;
 		}
 	}
 }
@@ -93,4 +95,8 @@
 	background-color: $dark_shades;
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+
+.tableheader {
+	font-weight: 700;
 }

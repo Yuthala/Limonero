@@ -114,9 +114,9 @@
 					<p>Ажурные вставки, сложные резинки, узоры, молнии, увеличивают стоимость изготовления. Наценки к стандартной стоимости приведены в таблице ниже.</p>
 				</div>
 
-				<div class="machine-knit__table">
-					<div class="machine-knit__table-item tableheader">Особенность изготовления</div>
-					<div class="machine-knit__table-item tableheader">Наценка, %</div>
+				<div class="machine-knit__table" id="calculator">
+					<div class="machine-knit__table-item">Особенность изготовления</div>
+					<div class="machine-knit__table-item">Наценка, %</div>
 					<div class="machine-knit__table-item">Горизонтальные полосы до 30% изделия</div>
 					<div class="machine-knit__table-item">10%</div>
 					<div class="machine-knit__table-item">Горизонтальные полосы свыше 30% изделия</div>
@@ -153,13 +153,13 @@
 						<div class="machine-knit__example-item">Расход пряжи</div>
 						<div class="machine-knit__example-item">160 г</div>
 						<div class="machine-knit__example-item">Стоимость изготовления</div>
-						<div class="machine-knit__example-item">(400 м * 1,6 ) * 2 р = 640 м * 2 р = 1280 р</div>
+						<div class="machine-knit__example-item">(400 м * 1,6 ) * 2 р = 640 м * 2 р = <span class="tableheader">1280 р</span></div>
 						<div class="machine-knit__example-item">Наценка</div>
 						<div class="machine-knit__example-item">0 (планка только под сторону с пуговицами, без узоров, простая резинка)</div>
 						<div class="machine-knit__example-item">Стоимость фурнитуры</div>
 						<div class="machine-knit__example-item">60 р * 4 шт. = 240 р</div>
-						<div class="machine-knit__example-item tableheader">Итого</div>
-						<div class="machine-knit__example-item">1520 р</div>
+						<div class="machine-knit__example-item tableheader">Итого с фурнитурой</div>
+						<div class="machine-knit__example-item tableheader">1520 р</div>
 					</div>
 				</div>
 			</div>

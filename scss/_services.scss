@@ -32,7 +32,8 @@
 		font-weight: 400;
 		letter-spacing: 0.02em;
 		color: $light_accent;
-		margin-bottom: 27px;
+		margin-bottom: 15px;
+		margin-top: 10px;
 	}
 	&__text {
 		font-size: 18px;
@@ -45,6 +46,12 @@
 		font-size: 16px;
 		font-weight: 400;
 		color: $light_shades;
+	}
+	&__link {
+		text-decoration: none;
+		font-size: 16px;
+		color: $light_accent;
+		font-weight: 700;
 	}
 }
 
