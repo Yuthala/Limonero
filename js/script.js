@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', function() { //загрузка ко
 	/*ПЕРЕМЕННЫЕ*/
 
 		/*переменные для класса current*/
-		links = document.querySelectorAll('.menu__item'),	
+		let links = document.querySelectorAll('.menu__item'),	
 		menu = document.querySelectorAll('.menu'),
 		menuItems = document.querySelectorAll('.menu__item-link'),
 

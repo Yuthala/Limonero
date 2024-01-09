@@ -170,3 +170,23 @@
 		line-height: 3;
 	}
 }
+
+.select-design {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: white;
+	//background-image: url('path/to/arrow.png');
+	//background-position: right center;
+	//background-repeat: no-repeat;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	option {
+		padding: 10px;
+		background-size: contain;
+		background-position: left center;
+		background-repeat: no-repeat;
+	}
+}
