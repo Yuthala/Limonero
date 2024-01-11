@@ -58,7 +58,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 40px;
-		justify-content: start;
+		justify-content: flex-start;
 		&:first-child {
 			width: 35%;
 		}
@@ -104,12 +104,12 @@
 		&-table {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
-			grid-template-rows: repeat(8, 9vh);
+			grid-template-rows: repeat(8, 6vh);
 			padding-bottom: 4vh;
 		}
 		&-item {
 			border-bottom: 2px dashed $dark_shades;
-			padding-top: 3vh;
+			padding-top: 2vh;
 			&.high-line {
 				padding-top: 0;
 			}
@@ -158,7 +158,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 40px;
-		justify-content: start;
+		justify-content: flex-start;
 		&:first-child {
 			width: 40%;
 		}
@@ -168,6 +168,15 @@
 		font-weight: 700;
 		font-size: 20px;
 		line-height: 3;
+	}
+	&-inner_flexwrap {
+		display: flex;
+		justify-content: space-between;
+		gap: 3vw;
+		img {
+			width: 17vw;
+			padding-right: 2vw;
+		}
 	}
 }
 

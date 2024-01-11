@@ -154,12 +154,10 @@
 						<div class="machine-knit__example-item">160 г</div>
 						<div class="machine-knit__example-item">Стоимость изготовления</div>
 						<div class="machine-knit__example-item">(400 м * 1,6 ) * 2 р = 640 м * 2 р = <span class="tableheader">1280 р</span></div>
-						<div class="machine-knit__example-item">Наценка</div>
-						<div class="machine-knit__example-item high-line">128 р = 5% (планка под сторону с пуговицами, фигурный низ, без узоров, простая резинка)</div>
 						<div class="machine-knit__example-item">Стоимость фурнитуры</div>
 						<div class="machine-knit__example-item">60 р * 4 шт. = 240 р</div>
 						<div class="machine-knit__example-item tableheader">Итого с фурнитурой</div>
-						<div class="machine-knit__example-item tableheader">1648 р</div>
+						<div class="machine-knit__example-item tableheader">1520 р</div>
 					</div>
 				</div>
 			</div>
@@ -169,6 +167,7 @@
 			<div class="design-inner container">
 				<h2 class="design__header">Разработка модели</h2>
 				<p>Мы предлагаем полный цикл разработки трикотажного изделия на один или несколько размеров, включая отвязывание образцового изделия. В результате вы получаете всё необходимое для запуска модели в серийное производство под своей торговой маркой. Можем взять на себя производство небольших партий (подробнее в разделе <a href="#machine-knit" class="calculator-link">Машинное вязание</a> ).</p>
+				<div class="design-inner_flexwrap">
 				<ul><span class="design__ul">Услуга включает в себя:</span> 
 					<li>согласование технического задания</li>
 					<li>подбор пряжи и фурнитуры</li> 
@@ -179,6 +178,9 @@
 					<li>отвязка и сборка образцового изделия в одном размере</li>
 					<li>приемка проекта заказчиком</li>
 				</ul>
+
+				<img src="img/design.jpg" alt="design">
+				</div>
 				<p><strong>Стоимость пряжи и фурнитуры оплачивается отдельно</strong></p>
 				<p>Примерная стоимость комплексной услуги для различных изделий приведена ниже.</p>
 
@@ -186,8 +188,8 @@
 					<div class="design__item options-list">
 						<label class="design__label">Выберите изделие</label>
 						<select id="select-design">
-							<option data-image="../img/slider/slide_1.jpg" value="7000" class="design-option" selected >Базовый джемпер жен., без узоров</option>
-							<option data-image="../img/slider/slide_3.jpg" class="design-option" value="7700">Базовый джемпер жен., простой узор</option>
+							<option data-image="img/slider/slide_1.jpg" value="7000" class="design-option" selected >Базовый джемпер жен., без узоров</option>
+							<option data-image="img/slider/slide_3.jpg" class="design-option" value="7700">Базовый джемпер жен., простой узор</option>
 							<!--<option value="8800">Базовый джемпер жен., с элементами жаккарда</option>
 							<option value="8800">Базовый джемпер жен., с элементами ажура</option>
 							<option value="8800">Базовый джемпер жен., с крупными одноцветными узорами</option>
