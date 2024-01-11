@@ -47,21 +47,26 @@ window.addEventListener('DOMContentLoaded', function() {
 		let priceInput = document.getElementById('design-price'); //поле для вывода результата расчета стоимости изделия
 		console.log(`переменная priceInput  ${priceInput}`);
 
+		/*исполняемый код*/
+		showPrice ();
+
 		for (let i = 0; i < designOptions.length; i++) {
 			let option = designOptions[i];
 			let image = option.getAttribute("data-image");
 			console.log(`переменная image ${image}`);
 			pictureFrame.style.backgroundImage = "url('" + image + "')";
-		}
+		};
 
 		/*EVENT LISTENERS*/
+		itemSelector.addEventListener('change', function() {
+			showPrice();
+		});
 
 		/*Функции*/
 		function showPrice () {
 			priceInput.innerHTML = itemSelector.value;
 		}
 
-		showPrice ();
 	}
 	
 	priceCalaculatorDesign ();
