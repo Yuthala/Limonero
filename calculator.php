@@ -188,9 +188,9 @@
 					<div class="design__item options-list">
 						<label class="design__label">Выберите изделие</label>
 						<select id="select-design">
-							<option data-image="img/slider/slide_1.jpg" value="7000" class="design-option" selected >Базовый джемпер жен., без узоров</option>
-							<option data-image="img/slider/slide_3.jpg" class="design-option" value="7700">Базовый джемпер жен., простой узор</option>
-							<option data-image="img/slider/slide_7.jpg" class="design-option" value="8800">Базовый джемпер жен., с элементами жаккарда</option>
+							<option data-image="img/slider/slide_1.jpg" value="0" class="design-option" selected >Базовый джемпер жен., без узоров</option>
+							<option data-image="img/slider/slide_3.jpg" class="design-option" value="1">Базовый джемпер жен., простой узор</option>
+							<option data-image="img/slider/slide_7.jpg" class="design-option" value="2">Базовый джемпер жен., с элементами жаккарда</option>
 							<!--<option value="8800">Базовый джемпер жен., с элементами ажура</option>
 							<option value="8800">Базовый джемпер жен., с крупными одноцветными узорами</option>
 							<option value="9400">Базовый джемпер жен., с крупными многоцветными узорами</option>

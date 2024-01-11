@@ -36,26 +36,29 @@ window.addEventListener('DOMContentLoaded', function() {
 
 	priceCalaculatorKnit ();
 
+
+
+	
 	/*Калькулятор Design*/
+
+	const prices = [
+		7000,
+		7700,
+		8800
+	];
+
 	function priceCalaculatorDesign () {
 			/*переменные*/
 		let itemSelector = document.getElementById('select-design'); //выбор пользователя в поле "Выберите изделие"
 		console.log(`переменная itemSelector.value ${itemSelector.value}`);
 		let designOptions = itemSelector.getElementsByTagName("option"); //опции выбора изделия
-		console.log(`переменная designOptions  ${designOptions}`);
+		console.log(`переменная designOptions[0]  ${designOptions[0]}`);
 		let pictureFrame = document.getElementById ('design-picture'); //поле для вывода картинки
 		let priceInput = document.getElementById('design-price'); //поле для вывода результата расчета стоимости изделия
 		console.log(`переменная priceInput  ${priceInput}`);
 
 		/*исполняемый код*/
 		showPrice ();
-
-		for (let i = 0; i < designOptions.length; i++) {
-			let option = designOptions[i];
-			let image = option.getAttribute("data-image");
-			console.log(`переменная image ${image}`);
-			pictureFrame.style.backgroundImage = "url('" + image + "')";
-		};
 
 		/*EVENT LISTENERS*/
 		itemSelector.addEventListener('change', function() {
@@ -64,7 +67,13 @@ window.addEventListener('DOMContentLoaded', function() {
 
 		/*Функции*/
 		function showPrice () {
-			priceInput.innerHTML = itemSelector.value;
+			let i = itemSelector.value;
+			let option = designOptions[i];
+			let image = option.getAttribute("data-image");
+			pictureFrame.style.backgroundImage = "url('" + image + "')";
+			//console.log(`переменная itemSelector.value ${itemSelector.value}`);
+
+			priceInput.innerHTML = prices[i];
 		}
 
 	}
