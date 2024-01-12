@@ -44,7 +44,17 @@ window.addEventListener('DOMContentLoaded', function() {
 	const prices = [
 		7000,
 		7700,
-		8800
+		8800,
+		8400,
+		8800,
+		9400,
+		8400,
+		8800,
+		5500,
+		4500,
+		11800,
+		3000,
+		2500
 	];
 
 	function priceCalaculatorDesign () {

@@ -111,7 +111,7 @@
 				<div>
 					<p>Если вам известен метраж пряжи, у вас изделие гладью или обычной резинкой, из стандартной пряжи (средней толщины, без пайеток), без узоров, полос, роспусков, сложных резинок (жемучужная, английская), стоимость изготовления будет равна стоимости по калькулятору.  Фурнитура оплачивается отдельно. </p> 
 					<div class="dividerTable"></div>
-					<p>Ажурные вставки, сложные резинки, узоры, молнии, увеличивают стоимость изготовления. Наценки к стандартной стоимости приведены в таблице ниже.</p>
+					<p>Ажурные вставки, сложные резинки, узоры, молнии, оверсайз модель увеличивают стоимость изготовления. Наценки к стандартной стоимости приведены в таблице ниже.</p>
 				</div>
 
 				<div class="machine-knit__table">
@@ -188,20 +188,19 @@
 					<div class="design__item options-list">
 						<label class="design__label">Выберите изделие</label>
 						<select id="select-design">
-							<option data-image="img/slider/slide_1.jpg" value="0" class="design-option" selected >Базовый джемпер жен., без узоров</option>
-							<option data-image="img/slider/slide_3.jpg" class="design-option" value="1">Базовый джемпер жен., простой узор</option>
-							<option data-image="img/slider/slide_7.jpg" class="design-option" value="2">Базовый джемпер жен., с элементами жаккарда</option>
-							<!--<option value="8800">Базовый джемпер жен., с элементами ажура</option>
-							<option value="8800">Базовый джемпер жен., с крупными одноцветными узорами</option>
-							<option value="9400">Базовый джемпер жен., с крупными многоцветными узорами</option>
-							<option value="8400">Базовый кардиган короткий жен.</option>
-							<option value="8800">Базовый джемпер муж., без узоров</option>
-							<option value="5500">Базовый джемпер дет., р. 98, без узоров</option>
-							<option value="4500">Жилетка жен.</option>
-							<option value="8800">Платье прямое, длина 100 см</option>
-							<option value="3000">Шапка взросл.</option>
-							<option value="3000">Шапка дет.</option>
-							<option value="2500">Шарф длина 180 см, шир. 30 см</option>-->
+							<option data-image="img/calculator/image_1.jpg" value="0" class="design-option" selected >Базовый джемпер жен., без узоров</option>
+							<option data-image="img/calculator/image_2.jpg" class="design-option" value="1">Базовый джемпер жен., простой узор</option>
+							<option data-image="img/calculator/image_3.jpg" class="design-option" value="2">Базовый джемпер жен., с элементами жаккарда</option>
+							<option data-image="img/calculator/image_4.jpg" class="design-option" value="3">Базовый джемпер жен., с роспусками</option>
+							<option data-image="img/calculator/image_5.jpg" class="design-option" value="4">Базовый джемпер жен., с крупными одноцветными узорами</option>
+							<option data-image="img/calculator/image_6.jpg" class="design-option" value="5">Базовый джемпер жен., с крупными многоцветными узорами</option>
+							<option data-image="img/calculator/image_7.webp" class="design-option" value="6">Базовый кардиган короткий жен.</option>
+							<option data-image="img/calculator/image_8.jpg" class="design-option" value="7">Базовый джемпер муж., без узоров</option>
+							<option data-image="img/calculator/image_9.jpg" class="design-option" value="8">Базовый джемпер дет., р. 98, без узоров</option>
+							<option data-image="img/calculator/image_10.jpg" class="design-option" value="9">Жилетка жен.</option>
+							<option data-image="img/calculator/image_11.jpg" class="design-option" value="10">Платье прямое, длина 100 см</option>
+							<option data-image="img/calculator/image_12.jpg" class="design-option" value="11">Шапка взросл.</option>
+							<option data-image="img/calculator/image_13.jpg" class="design-option" value="12">Шарф длина 180 см, шир. 30 см</option>
 						</select>
 					</div>
 
