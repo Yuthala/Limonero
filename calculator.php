@@ -24,7 +24,7 @@
 						<li class="menu__item"><a href="./index.html" class="menu__item-link">Главная</a></li>
 						<li class="menu__item"><a href="./index.html#services" class="menu__item-link">Услуги</a></li>
 						<li class="menu__item"><a href="./index.html#portfolio" class="menu__item-link">Работы</a></li>
-						<li class="menu__item"><a href="./index.html#about" class="menu__item-link">Обо мне</a></li>
+						<li class="menu__item"><a href="./index.html#about" class="menu__item-link">О мастерской</a></li>
 						<li class="menu__item current"><a href="#" class="menu__item-link">Калькулятор</a></li>
 						<li class="menu__item"><a href="./index.html#contacts" class="menu__item-link">Контакты</a></li>
 					</ul>
@@ -39,7 +39,7 @@
 							<li class="menu__item"><a href="./index.html" class="menu__item-link">Главная</a></li>
 							<li class="menu__item"><a href="./index.html#services" class="menu__item-link">Услуги</a></li>
 							<li class="menu__item"><a href="./index.html#portfolio" class="menu__item-link">Работы</a></li>
-							<li class="menu__item"><a href="./index.html#about" class="menu__item-link">Обо мне</a></li>
+							<li class="menu__item"><a href="./index.html#about" class="menu__item-link">О мастерской</a></li>
 							<li class="menu__item"><a href="./index.html" class="menu__item-link current">Калькулятор</a></li>
 							<li class="menu__item"><a href="./index.html#contacts" class="menu__item-link">Контакты</a></li>
 						</ul>
@@ -134,7 +134,7 @@
 					<div class="machine-knit__table-item">Роспуски от до 11 до 20 шт на изделие</div>
 					<div class="machine-knit__table-item">20%</div>
 					<div class="machine-knit__table-item">Изделие с пуговицами и планкой</div>
-					<div class="machine-knit__table-item">не более 10%</div>
+					<div class="machine-knit__table-item">до 10%</div>
 				</div>
 
 				<div class="dividerTable"></div>
