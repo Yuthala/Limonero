@@ -215,6 +215,12 @@
 				</div>
 			</div>
 		</section>
+
+		<section class="tailor">
+			<div class="container">
+				<h2 class="tailor-header">Услуги для ателье</h2>
+			</div>
+		</section>
 	</main>
 
 	<footer>

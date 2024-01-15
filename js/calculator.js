@@ -57,6 +57,33 @@ window.addEventListener('DOMContentLoaded', function() {
 		2500
 	];
 
+	// class Item {
+	// 	name = "";
+	// 	price = 0;
+	// 	image = "";
+
+	// 	constructor (name, price, image) {
+	// 		this.name = name;
+	// 		this.price = price;
+	// 		this.image = image;
+	// 	}
+	// }
+
+	// const items = [Item];
+
+	// let item = new Item ("Jacket", 5500);
+
+	// let item_1 = new Item ("J1", 7000);
+
+	// let item_2 = new Item ("J2", 1000);
+	// console.log(`переменная item ${item.name}`);
+	// console.log(`переменная item ${item.price}`);
+
+	// items.push(item);
+	// items.push(item_1);
+	// items.push(item_2);
+	// console.log(`массив items ${items[2].price}`);
+
 	function priceCalaculatorDesign () {
 			/*переменные*/
 		let itemSelector = document.getElementById('select-design'); //выбор пользователя в поле "Выберите изделие"
@@ -84,9 +111,39 @@ window.addEventListener('DOMContentLoaded', function() {
 			//console.log(`переменная itemSelector.value ${itemSelector.value}`);
 
 			priceInput.innerHTML = prices[i];
+			//priceInput.innerHTML = items[i].price;
 		}
 
 	}
 	
 	priceCalaculatorDesign ();
+
+	/*Калькулятор Tailor*/
+
+	// class Item {
+	// 	name = "";
+	// 	price = 0;
+	// 	image = "";
+
+	// 	constructor (name, price, image) {
+	// 		this.name = name;
+	// 		this.price = price;
+	// 		this.image = image;
+	// 	}
+	// }
+
+	// const items = [Item];
+
+	// let item = new Item ("Jacket", 5500);
+
+	// let item_1 = new Item ("J1", 7000);
+
+	// let item_2 = new Item ("J2", 1000);
+	// console.log(`переменная item ${item.name}`);
+	// console.log(`переменная item ${item.price}`);
+
+	// items.push(item);
+	// items.push(item_1);
+	// items.push(item_2);
+	// console.log(`массив items ${items[2].price}`);
 })
