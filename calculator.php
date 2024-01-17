@@ -219,18 +219,28 @@
 
 		<section class="tailor">
 			<div class="container">
-				<h2 class="tailor-header">Услуги для ателье</h2>
+				<h2 class="tailor__header">Услуги для ателье</h2>
 				<p>Иногда требуется изготовить отдельные трикотажные детали для швейных изделий - манжеты, капюшон, рукава, карман, шнур определенного цвета. Изготовим эти и другие детали по вашим размерам в нужном цвете.</p>
 				<p>Примерная стоимость изготовления отдельных деталей приведена ниже.</p>
 				<p><strong>Стоимость стандартных материалов включена в стоимость (стандартно - шерсть меринос 100%).</strong></p>
 
 				<div class="tailor__calculator">
-					<div class="tailor__item options-list">
+					<div class="tailor__item">
 						<label class="tailor__label">Выберите деталь</label>
 						<select id="select-tailor">
 							<option data-image="img/calculator/image_1.jpg" value="0" class="tailor-option" selected >Манжеты, 2 шт.</option>
+							<option data-image="img/calculator/image_2.jpg" value="0" class="tailor-option" >Капюшон</option>
 						</select>
 					</div>
+
+					<div class="tailor__item">
+						<div class="tailor__picture" id="tailor-picture"></div>
+				</div>
+
+					<div class="tailor__item">
+							<label class="tailor__label">Стоимость</label>
+					<div class="tailor__price" id="tailor-price"></div>
+				</div>
 			</div>
 		</section>
 	</main>

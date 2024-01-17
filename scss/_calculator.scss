@@ -206,3 +206,71 @@
 		background-repeat: no-repeat;
 	}
 }
+
+/*=====Tailor====*/
+
+.tailor {
+	line-height: 1.3;
+	p {
+		font-size: 18px;
+	}
+	&__header {
+		font-size: 36px;
+		font-weight: 400;
+		letter-spacing: 0.02em;
+		color: $light_accent;
+		margin-bottom: 27px;
+		text-align: center;
+	}
+	&__price {
+		border: 1px solid $light_accent;
+		height: 10vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 24px;
+	}
+	&__calculator {
+		padding: 50px;
+		margin: 0 auto;
+		display: flex;
+		gap: 100px;
+	}
+	&__item {
+		width: 25%;
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+		justify-content: flex-start;
+		&:first-child {
+			width: 30%;
+		}
+	}
+	&__picture {
+		height: 40vh;
+		object-fit: contain;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 15vw auto;
+	}
+}
+
+.select-tailor {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: white;
+	//background-image: url('path/to/arrow.png');
+	//background-position: right center;
+	//background-repeat: no-repeat;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	option {
+		padding: 10px;
+		background-size: contain;
+		background-position: left center;
+		background-repeat: no-repeat;
+	}
+}
