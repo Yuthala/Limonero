@@ -123,27 +123,32 @@ window.addEventListener('DOMContentLoaded', function() {
 	class Item {
 		name = "";
 		price = 0;
-		image = "";
+		//image = "";
 
 		constructor (name, price, image) {
 			this.name = name;
 			this.price = price;
-			this.image = image;
+			//this.image = image;
 		}
 	}
 
-	const items = [Item];
+	// const items = [Item];
 
-	let item = new Item ("Jacket", 5500);
+	// let item = new Item ("Jacket", 5500);
 
-	let item_1 = new Item ("J1", 7000);
+	// let item_1 = new Item ("J1", 7000);
 
-	let item_2 = new Item ("J2", 1000);
-	console.log(`переменная item ${item.name}`);
-	console.log(`переменная item ${item.price}`);
+	// let item_2 = new Item ("J2", 1000);
+	// console.log(`переменная item ${item.name}`);
+	// console.log(`переменная item ${item.price}`);
 
-	items.push(item);
-	items.push(item_1);
-	items.push(item_2);
-	console.log(`массив items ${items[2].price}`);
+	// items.push(item);
+	// items.push(item_1);
+	// items.push(item_2);
+	// console.log(`массив items ${items[2].price}`);
+
+	const items = {
+		item_0: new Item ("Манжеты, 2 шт.", 1500),
+		item_1: new Item ("Рукав, 2 шт.", 2500)
+	}
 })
