@@ -85,7 +85,7 @@ window.addEventListener('DOMContentLoaded', function() {
 	// console.log(`массив items ${items[2].price}`);
 
 	function priceCalaculatorDesign () {
-			/*переменные*/
+		/*переменные*/
 		let itemSelector = document.getElementById('select-design'); //выбор пользователя в поле "Выберите изделие"
 		console.log(`переменная itemSelector.value ${itemSelector.value}`);
 		let designOptions = itemSelector.getElementsByTagName("option"); //опции выбора изделия
@@ -151,4 +151,39 @@ window.addEventListener('DOMContentLoaded', function() {
 		item_0: new Item ("Манжеты, 2 шт.", 1500),
 		item_1: new Item ("Рукав, 2 шт.", 2500)
 	}
+	console.log(`переменная item_0 ${items.item_0.price}`);
+
+	function priceCalculatorTailor () {
+		/*переменные*/
+		let itemSelector = document.getElementById('select-tailor'); //выбор пользователя в поле "Выберите изделие"
+		//console.log(`переменная itemSelector.value ${itemSelector.value}`);
+		let tailorOptions = itemSelector.getElementsByTagName("option"); //опции выбора изделия
+		//console.log(`переменная tailorOptions[0]  ${tailorOptions[0]}`);
+		let pictureFrame = document.getElementById ('tailor-picture'); //поле для вывода картинки
+		let priceInput = document.getElementById('tailor-price'); //поле для вывода результата расчета стоимости изделия
+		//console.log(`переменная priceInput  ${priceInput}`);
+
+		/*исполняемый код*/
+		showPrice ();
+
+		/*EVENT LISTENERS*/
+		itemSelector.addEventListener('change', function() {
+			showPrice();
+		});
+
+		/*Функции*/
+		function showPrice () {
+			let i = itemSelector.value;
+			let option = tailorOptions[i];
+			//let image = option.getAttribute("data-image");
+			//pictureFrame.style.backgroundImage = "url('" + image + "')";
+			//console.log(`переменная itemSelector.value ${itemSelector.value}`);
+
+			priceInput.innerHTML = items[i].price;
+			//priceInput.innerHTML = items[i].price;
+		}
+	}
+
+	priceCalculatorTailor ();
+
 })
