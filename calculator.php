@@ -228,8 +228,14 @@
 					<div class="tailor__item">
 						<label class="tailor__label">Выберите деталь</label>
 						<select id="select-tailor">
-							<option data-image="img/calculator/image_1.jpg" value="0" class="tailor-option" selected >Манжеты, 2 шт.</option>
-							<option data-image="img/calculator/image_2.jpg" value="1" class="tailor-option" >Капюшон</option>
+							<option value="0" class="tailor-option" selected>Манжеты, 2 шт.</option>
+							<option value="0" class="tailor-option">Рукав, 2 шт.</option>
+							<option value="1" class="tailor-option" >Капюшон</option>
+							<option value="2" class="tailor-option" >Шнур</option>
+							<option value="3" class="tailor-option" >Подвяз</option>
+							<option value="4" class="tailor-option" >Шнур</option>
+							<option value="4" class="tailor-option" >Карман</option>
+							<option value="1" class="tailor-option" >Клапан кармана</option>
 						</select>
 					</div>
 

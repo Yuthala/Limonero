@@ -144,8 +144,8 @@ window.addEventListener('DOMContentLoaded', function() {
 	// console.log(`массив items ${items[2].price}`);
 
 	const items = [
-		new Item ("Манжеты, 2 шт.", 1500, 'img/calculator/image_1.jpg'),
-		new Item ("Рукав, 2 шт.", 2500, 'img/calculator/image_2.jpg')
+		new Item ("Манжеты, 2 шт.", 1200, 'img/calculator/image_100.webp'),
+		new Item ("Рукав, 2 шт.", 2500, 'img/calculator/image_101.jpg'),
 	];
 
 	console.log(`переменная item_0 ${items[0].price}`);
