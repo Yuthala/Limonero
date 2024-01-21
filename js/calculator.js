@@ -99,21 +99,17 @@ window.addEventListener('DOMContentLoaded', function() {
 
 		/*EVENT LISTENERS*/
 		itemSelector.addEventListener('change', function() {
-			showPrice();
+			showPrice ();
 		});
 
-		/*Функции*/
 		function showPrice () {
 			let i = itemSelector.value;
 			let option = designOptions[i];
 			let image = option.getAttribute("data-image");
 			pictureFrame.style.backgroundImage = "url('" + image + "')";
 			//console.log(`переменная itemSelector.value ${itemSelector.value}`);
-
 			priceInput.innerHTML = prices[i];
-			//priceInput.innerHTML = items[i].price;
 		}
-
 	}
 	
 	priceCalaculatorDesign ();
@@ -123,12 +119,12 @@ window.addEventListener('DOMContentLoaded', function() {
 	class Item {
 		name = "";
 		price = 0;
-		//image = "";
+		image = "";
 
 		constructor (name, price, image) {
 			this.name = name;
 			this.price = price;
-			//this.image = image;
+			this.image = image;
 		}
 	}
 
@@ -147,41 +143,37 @@ window.addEventListener('DOMContentLoaded', function() {
 	// items.push(item_2);
 	// console.log(`массив items ${items[2].price}`);
 
-	const items = {
-		item_0: new Item ("Манжеты, 2 шт.", 1500),
-		item_1: new Item ("Рукав, 2 шт.", 2500)
-	}
-	console.log(`переменная item_0 ${items.item_0.price}`);
+	const items = [
+		new Item ("Манжеты, 2 шт.", 1500, 'img/calculator/image_1.jpg'),
+		new Item ("Рукав, 2 шт.", 2500, 'img/calculator/image_2.jpg')
+	];
+
+	console.log(`переменная item_0 ${items[0].price}`);
 
 	function priceCalculatorTailor () {
 		/*переменные*/
 		let itemSelector = document.getElementById('select-tailor'); //выбор пользователя в поле "Выберите изделие"
 		//console.log(`переменная itemSelector.value ${itemSelector.value}`);
-		let tailorOptions = itemSelector.getElementsByTagName("option"); //опции выбора изделия
+		//let tailorOptions = itemSelector.getElementsByTagName("option"); //опции выбора изделия
 		//console.log(`переменная tailorOptions[0]  ${tailorOptions[0]}`);
 		let pictureFrame = document.getElementById ('tailor-picture'); //поле для вывода картинки
 		let priceInput = document.getElementById('tailor-price'); //поле для вывода результата расчета стоимости изделия
 		//console.log(`переменная priceInput  ${priceInput}`);
 
-		/*исполняемый код*/
-		showPrice ();
+		priceInput.innerHTML = items[0].price;
+		pictureFrame.style.backgroundImage = "url('" + items[0].image + "')";
+		console.log(`items-0[image] ${items[0].image}`);
 
 		/*EVENT LISTENERS*/
 		itemSelector.addEventListener('change', function() {
-			showPrice();
+			//showPrice();
+			let i = itemSelector.value;
+			let price = items[i].price;
+			console.log(`переменная price ${price}`);
+			priceInput.innerHTML = price;
+			pictureFrame.style.backgroundImage = "url('" + items[i].image + "')";
 		});
 
-		/*Функции*/
-		function showPrice () {
-			let i = itemSelector.value;
-			let option = tailorOptions[i];
-			//let image = option.getAttribute("data-image");
-			//pictureFrame.style.backgroundImage = "url('" + image + "')";
-			//console.log(`переменная itemSelector.value ${itemSelector.value}`);
-
-			priceInput.innerHTML = items[i].price;
-			//priceInput.innerHTML = items[i].price;
-		}
 	}
 
 	priceCalculatorTailor ();
