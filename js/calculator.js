@@ -146,6 +146,10 @@ window.addEventListener('DOMContentLoaded', function() {
 	const items = [
 		new Item ("Манжеты, 2 шт.", 1200, 'img/calculator/image_100.webp'),
 		new Item ("Рукав, 2 шт.", 2500, 'img/calculator/image_101.jpg'),
+		new Item ("Капюшон", 2000, 'img/calculator/image_102.jpg'),
+		new Item ("Шнур вязаный, 1 м", 300, 'img/slider/slide_5.jpg'),
+		new Item ("Воротник для бомбера", 1200, 'img/calculator/image_104.png'),
+		new Item ("Накладной карман", 300, 'img/calculator/image_105.jpg')
 	];
 
 	console.log(`переменная item_0 ${items[0].price}`);
