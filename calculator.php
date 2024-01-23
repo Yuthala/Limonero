@@ -77,9 +77,6 @@
 
 
 				<div class="machine-knit__calculator">
-
-				<?php
-					$content = '
 						<div class="machine-knit__item options-list">
 							<label class="machine-knit__label">Выберите изделие</label>
 							<select id="select">
@@ -93,10 +90,7 @@
 								<option value="300">Шапка дет.</option>
 								<option value="400">Шарф длина 180 см, шир. 30 см</option>
 							</select>
-						</div>';
-					echo $content;
-				?>
-
+						</div>
 
 					<div class="machine-knit__item">
 						<label class="machine-knit__label">Расход пряжи в метрах</label>
@@ -176,7 +170,8 @@
 					<li>составление выкроек и расчетов</li>
 					<li>схемы узора</li>
 					<li>разработка технологии изготовления</li> 
-					<li>отвязка и сборка образцового изделия в одном размере</li>
+					<li>отвязка и сборка сигнального образца в одном размере</li>
+					<li>корректировка образца при необходимости</li>
 					<li>приемка проекта заказчиком</li>
 				</ul>
 
