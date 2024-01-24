@@ -14,8 +14,11 @@
 	&__item {
 		position: relative;
 		img {
-			max-width: 400px;
+			max-width: 18vw;
 			margin-right: 120px;
+			&:last-child {
+				margin-top: 5vh;
+			}
 		}
 	}
 	&__circle {
