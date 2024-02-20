@@ -83,14 +83,14 @@
 							<label class="machine-knit__label">Выберите изделие</label>
 							<select id="select">
 								<option value="1700" selected >Базовый джемпер жен., р. 46</option>
-								<option value="2200">Базовый джемпер муж., р. 50</option>
-								<option value="1100">Базовый джемпер дет., р. 116</option>
+								<option value="2100">Базовый джемпер муж., р. 50</option>
+								<option value="1200">Базовый джемпер дет., р. 116</option>
 								<option value="850">Базовый топ жен., р. 46</option>
 								<option value="1000">Жилетка, длина 58 см, р. 46</option>
 								<option value="2200">Платье жен., длина 100 см,  р. 46</option>
-								<option value="400">Шапка взросл.</option>
-								<option value="300">Шапка дет.</option>
-								<option value="400">Шарф длина 180 см, шир. 30 см</option>
+								<option value="600">Шапка взросл.</option>
+								<option value="450">Шапка дет.</option>
+								<option value="600">Шарф длина 180 см, шир. 30 см</option>
 							</select>
 						</div>
 
