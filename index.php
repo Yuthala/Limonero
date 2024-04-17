@@ -304,11 +304,11 @@
 		<div class="container">
 			<h3 class="policy"><a href="./policy.html" target="_blank">Политика конфиденциальности</a></h3>
 			<div class="divider"></div>
-			<div class="warning">Данный сайт несет информационный характер.<br> Материалы и цены,
+			<div class="warning">Данный сайт носит информационный характер.<br> Материалы и цены,
 				размещенные на сайте, не являются публичной офертой</div>
 			<div class="footer__author">
-				<p class="footer__author-text">2023-2024 Limonero</p>
-				<p class="footer__author-text">© Yuthala @ GitHub</p>
+				<p class="footer__author-text">2023-2024 ©Limonero</p>
+				<p class="footer__author-text">сайт от <a href="https://github.com/Yuthala" class="footer__author-link" target="_blank">Yuthala @ GitHub</a></p>
 			</div>
 		</div>
 	</footer>

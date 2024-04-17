@@ -28,9 +28,15 @@
 	&__author {
 		display: flex;
 		justify-content: space-around;
-	}
-	&__author-text {
-		color: $light_accent;
-		margin-top: 20px;
+		&-text {
+			color: $light_accent;
+			margin-top: 20px;
+		}
+		&-link {
+			color: $light_accent;
+			text-decoration: none;
+			cursor: pointer;
+		}
 	}
 }
+

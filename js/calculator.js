@@ -40,49 +40,22 @@ window.addEventListener('DOMContentLoaded', function() {
 
 	
 	/*Калькулятор Design*/
-
+	/*массив с ценами*/
 	const prices = [
-		7900,
-		8700,
-		9800,
-		9500,
-		10900,
-		13000,
-		8500,
-		8900,
-		5400,
-		5800,
-		10900,
-		3200,
-		2300
+		7900, //джемпер жен. без узоров
+		8500, //джемпер жен. простой узор
+		9800, //джемпер жен. с жаккардом
+		8500, //джемпер жен. с роспусками
+		10900, //джемпер жен. интарсия 2 цвета
+		13000, //джемпер жен. интарсия многоцветная
+		8500, //кардиган жен. короткий
+		8900, //джемпер муж. простой
+		5400, //джемпер детский 
+		5800, //жилетка жен.
+		10900, //платье прямое 
+		3200, //шапка взрослая
+		2300 //шарф взрослый
 	];
-
-	// class Item {
-	// 	name = "";
-	// 	price = 0;
-	// 	image = "";
-
-	// 	constructor (name, price, image) {
-	// 		this.name = name;
-	// 		this.price = price;
-	// 		this.image = image;
-	// 	}
-	// }
-
-	// const items = [Item];
-
-	// let item = new Item ("Jacket", 5500);
-
-	// let item_1 = new Item ("J1", 7000);
-
-	// let item_2 = new Item ("J2", 1000);
-	// console.log(`переменная item ${item.name}`);
-	// console.log(`переменная item ${item.price}`);
-
-	// items.push(item);
-	// items.push(item_1);
-	// items.push(item_2);
-	// console.log(`массив items ${items[2].price}`);
 
 	function priceCalaculatorDesign () {
 		/*переменные*/
@@ -94,7 +67,6 @@ window.addEventListener('DOMContentLoaded', function() {
 		let priceInput = document.getElementById('design-price'); //поле для вывода результата расчета стоимости изделия
 		console.log(`переменная priceInput  ${priceInput}`);
 
-		/*исполняемый код*/
 		showPrice ();
 
 		/*EVENT LISTENERS*/
@@ -107,7 +79,6 @@ window.addEventListener('DOMContentLoaded', function() {
 			let option = designOptions[i];
 			let image = option.getAttribute("data-image");
 			pictureFrame.style.backgroundImage = "url('" + image + "')";
-			//console.log(`переменная itemSelector.value ${itemSelector.value}`);
 			priceInput.innerHTML = prices[i];
 		}
 	}
@@ -115,7 +86,6 @@ window.addEventListener('DOMContentLoaded', function() {
 	priceCalaculatorDesign ();
 
 	/*Калькулятор Tailor*/
-
 	class Item {
 		name = "";
 		price = 0;
@@ -128,25 +98,10 @@ window.addEventListener('DOMContentLoaded', function() {
 		}
 	}
 
-	// const items = [Item];
-
-	// let item = new Item ("Jacket", 5500);
-
-	// let item_1 = new Item ("J1", 7000);
-
-	// let item_2 = new Item ("J2", 1000);
-	// console.log(`переменная item ${item.name}`);
-	// console.log(`переменная item ${item.price}`);
-
-	// items.push(item);
-	// items.push(item_1);
-	// items.push(item_2);
-	// console.log(`массив items ${items[2].price}`);
-
 	const items = [
 		new Item ("Манжеты, 2 шт.", 1200, 'img/calculator/image_100.webp'),
 		new Item ("Рукав, 2 шт.", 2500, 'img/calculator/image_101.jpg'),
-		new Item ("Капюшон", 2000, 'img/calculator/image_102.jpg'),
+		new Item ("Капюшон", 3000, 'img/calculator/image_102.jpg'),
 		new Item ("Шнур вязаный, 1 м", 300, 'img/slider/slide_5.jpg'),
 		new Item ("Воротник для бомбера", 1200, 'img/calculator/image_104.png'),
 		new Item ("Накладной карман", 300, 'img/calculator/image_105.jpg')
@@ -157,12 +112,8 @@ window.addEventListener('DOMContentLoaded', function() {
 	function priceCalculatorTailor () {
 		/*переменные*/
 		let itemSelector = document.getElementById('select-tailor'); //выбор пользователя в поле "Выберите изделие"
-		//console.log(`переменная itemSelector.value ${itemSelector.value}`);
-		//let tailorOptions = itemSelector.getElementsByTagName("option"); //опции выбора изделия
-		//console.log(`переменная tailorOptions[0]  ${tailorOptions[0]}`);
 		let pictureFrame = document.getElementById ('tailor-picture'); //поле для вывода картинки
 		let priceInput = document.getElementById('tailor-price'); //поле для вывода результата расчета стоимости изделия
-		//console.log(`переменная priceInput  ${priceInput}`);
 
 		priceInput.innerHTML = items[0].price;
 		pictureFrame.style.backgroundImage = "url('" + items[0].image + "')";
@@ -170,7 +121,6 @@ window.addEventListener('DOMContentLoaded', function() {
 
 		/*EVENT LISTENERS*/
 		itemSelector.addEventListener('change', function() {
-			//showPrice();
 			let i = itemSelector.value;
 			let price = items[i].price;
 			console.log(`переменная price ${price}`);

@@ -82,11 +82,11 @@
 						<div class="machine-knit__item options-list">
 							<label class="machine-knit__label">Выберите изделие</label>
 							<select id="select">
-								<option value="1700" selected >Базовый джемпер жен., р. 46</option>
-								<option value="2100">Базовый джемпер муж., р. 50</option>
-								<option value="1200">Базовый джемпер дет., р. 116</option>
+								<option value="1600" selected >Базовый джемпер жен., р. 46</option>
+								<option value="2000">Базовый джемпер муж., р. 50</option>
+								<option value="1000">Базовый джемпер дет., р. 116</option>
 								<option value="850">Базовый топ жен., р. 46</option>
-								<option value="1000">Жилетка, длина 58 см, р. 46</option>
+								<option value="800">Жилетка, длина 58 см, р. 46</option>
 								<option value="2200">Платье жен., длина 100 см,  р. 46</option>
 								<option value="600">Шапка взросл.</option>
 								<option value="450">Шапка дет.</option>
@@ -127,9 +127,9 @@
 					<div class="machine-knit__table-item">Узор ажурный</div>
 					<div class="machine-knit__table-item">100%, только с площади узора</div>
 					<div class="machine-knit__table-item">Роспуски до 10 шт на изделие</div>
-					<div class="machine-knit__table-item">10%</div>
+					<div class="machine-knit__table-item">5%</div>
 					<div class="machine-knit__table-item">Роспуски от до 11 до 20 шт на изделие</div>
-					<div class="machine-knit__table-item">20%</div>
+					<div class="machine-knit__table-item">10%</div>
 					<div class="machine-knit__table-item">Изделие с пуговицами и планкой</div>
 					<div class="machine-knit__table-item">до 10%</div>
 				</div>
@@ -219,7 +219,7 @@
 				<h2 class="tailor__header">Услуги для ателье</h2>
 				<p>Иногда требуется изготовить отдельные трикотажные детали для швейных изделий - манжеты, капюшон, рукава, карман, шнур определенного цвета. Изготовим эти и другие детали по вашим размерам в нужном цвете.</p>
 				<p>Примерная стоимость изготовления отдельных деталей приведена ниже.</p>
-				<p><strong>Стоимость стандартных материалов включена в стоимость (стандартно - шерсть меринос 100%).</strong></p>
+				<p><strong>Стоимость стандартных материалов включена в стоимость (стандартно - шерсть меринос + эластан).</strong></p>
 
 				<div class="tailor__calculator">
 					<div class="tailor__item">
@@ -228,7 +228,7 @@
 							<option value="0" class="tailor-option" selected>Манжеты, 2 шт.</option>
 							<option value="1" class="tailor-option">Рукав, 2 шт.</option>
 							<option value="2" class="tailor-option" >Капюшон</option>
-							<option value="3" class="tailor-option" >Шнур</option>
+							<option value="3" class="tailor-option" >Шнур, 1 м</option>
 							<option value="4" class="tailor-option" >Воротник</option>
 							<option value="5" class="tailor-option" >Карман</option>
 						</select>
@@ -250,11 +250,11 @@
 		<div class="container">
 			<h3 class="policy"><a href="./policy.html" target="_blank">Политика конфиденциальности</a></h3>
 			<div class="divider"></div>
-			<div class="warning">Данный сайт несет информационный характер.<br> Материалы и цены,
+			<div class="warning">Данный сайт носит информационный характер.<br> Материалы и цены,
 				размещенные на сайте, не являются публичной офертой</div>
 			<div class="footer__author">
-				<p class="footer__author-text">2023 Limonero</p>
-				<p class="footer__author-text">© Yuthala @ GitHub</p>
+				<p class="footer__author-text">2023-2024 ©Limonero</p>
+				<p class="footer__author-text">сайт от <a href="https://github.com/Yuthala" class="footer__author-link"  target="_blank">Yuthala @ GitHub</a></p>
 			</div>
 		</div>
 	</footer>

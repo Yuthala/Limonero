@@ -30,8 +30,9 @@
 .menu {
 	list-style: none;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
+	padding: 0;
 	&__item {
 		font-size: 16px;
 		line-height: 17px;
@@ -40,10 +41,10 @@
 		color: $dark_accent;
 		text-transform: uppercase;
 		text-decoration: none;
-		margin-right: 43px;
+		margin-right: 20px;
 		cursor: pointer;
 		&:last-child {
-			margin-right: 40px;
+			margin-right: 10px;
 		}
 		img {
 			width: 90px;
