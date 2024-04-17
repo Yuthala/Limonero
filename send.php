@@ -69,6 +69,7 @@ $mail->CharSet = 'UTF-8';
 $mail->From = 'smtp_assist@mail.ru';
 $mail->FromName = 'Limonero';
 $mail->addAddress('smtp_assist@mail.ru', 'Form');
+$mail->addAddress('dinavl@bk.ru', 'Limonero Заказ');
 
 $mail->isHTML(true);
 
