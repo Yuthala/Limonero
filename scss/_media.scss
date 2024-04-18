@@ -38,12 +38,18 @@
 	.about {
 		min-width: 900px;
 		&__inner {
-			margin-left: 20px;
+			padding-left: 20px;
 		}
 		&__item {
+			padding-left: 0;
 			img {
-				max-width: 300px;
-				margin-right: 60px;
+				max-width: 280px;
+				&:first-child {
+					display: block;
+				}
+				&:nth-child(4) {
+					margin-top: 0;
+				}
 			}
 		}
 		&__circle {
@@ -96,13 +102,14 @@
 			width: 460px;
 			height: 160px;
 			padding: 20px;
+			text-align: center;
 		}
 	}
 	.services {
 		min-width: 769px;
 		&__item {
 			width: 250px;
-			height: 400px;
+			height: 450px;
 		}
 		&__inner {
 			grid-gap: 80px;
@@ -116,8 +123,12 @@
 	}
 	.about {
 		min-width: 769px;
-		&__text {
-			max-width: 350px;
+		&__item {
+			img {
+				&:nth-child(2) {
+					display: block;
+				}
+			}
 		}
 	}
 	.contacts {
@@ -231,14 +242,20 @@
 			margin-top: 68px;
 			margin-bottom: 76px;
 		}
+		&__inner {
+			margin-left: 0;
+			margin-right: 0;
+		}
 		&__item {
+			display: flex;
+			flex-direction: column;
+			gap: 10vh;
+			padding-right: 5vh;
 			img {
-				position: relative;
-				max-width: 220px;
-				top: 5px;
-				left: 5px;
-				padding-left: 10px;
-				margin-right: 50px;
+				max-width: 200px;
+				padding-left: 0;
+				margin-right: 0;
+				padding-bottom: 2vh;
 			}
 		}
 		&__circle {
@@ -320,7 +337,6 @@
 
 	.menu {
 		max-width: 600px;
-		padding: 0;
 		&__item {
 			font-size: 10px;
 		}
@@ -345,6 +361,26 @@
 			margin-top: 20px;
 		}
 	}
+
+	.about{
+		&__inner {
+			padding-bottom: 50px;
+		}
+		&__item {
+			gap: 5vh;
+			img {
+				max-width: 150px;
+				&:nth-child(3) {
+					display: block;
+				}
+			}
+		}
+		&__text {
+			width: 80%;
+		}
+	}
+
+
 	.contacts {
 		&__form {
 			max-width: 520px;
@@ -353,6 +389,7 @@
 }
 
 @media screen and (max-width: 600px) {
+
 	body .container {
 		width: 520px;
 	}
@@ -399,7 +436,6 @@
 		&__block {
 			position: absolute;
 			top: 0;
-			//left: -100%;
 			width: 60%;
 			height: 100%;
 			background-color: $dark_accent;
@@ -464,6 +500,7 @@
 			margin-bottom: 76px;
 		}
 	}
+
 	.advantages {
 		&__item {
 			img {
@@ -471,6 +508,23 @@
 			}
 		}
 	}
+
+	.slider {
+		&-bottom {
+			background-image: none;
+			display: none;
+		}
+		&-dots {
+			padding-bottom: 120px;
+			margin-bottom: 40px;
+		}
+	}
+
+	.dot {
+		height: 10px;
+		width: 10px;
+	}
+
 	.about {
 		min-width: 390px;
 		&__inner {
@@ -480,11 +534,18 @@
 			gap: 40px;
 		}
 		&__item {
-			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding-right: 0;
 			img {
-				max-width: 300px;
+				max-width: 250px;
 				margin-right: 0;
 				margin: 0 auto;
+				&:nth-child(3), &:nth-child(4) {
+					display: none;
+				}
 			}
 		}
 		&__circle {
@@ -536,6 +597,8 @@
 		align-items: center;
 		&__item {
 			padding: 15px;
+			width: 280px;
+			height: 170px;
 		}
 		&__text {
 			font-size: 28px;
@@ -579,8 +642,8 @@
 			color: $light_shades;
 		}
 		&__item {
-			width: 340px;
-			height: 286px;
+			width: 320px;
+			height: 310px;
 			padding: 20px;
 			border-top: 2px dashed $light_accent;
 			&:first-child {
