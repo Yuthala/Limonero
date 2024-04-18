@@ -61,6 +61,8 @@
 				<span class="long"></span>
 				<span></span>
 			</div>
+		</div>
+
 		<div class="pageUp">
 			<a href="#" id="toTop"><img src="img/up-arrow.png" alt="arrow up"></a>
 		</div>
@@ -165,7 +167,8 @@
 				<h2 class="design__header">Разработка модели</h2>
 				<p>Я предлагаю услугу разработки трикотажного изделия на один или несколько размеров с изготовлением образцового изделия. В результате вы получаете всё необходимое для запуска модели в серийное производство под своей торговой маркой. Могу взять на себя производство небольших партий (подробнее в разделе <a href="#machine-knit" class="calculator-link">Машинное вязание</a> ).</p>
 				<div class="design-inner_flexwrap">
-					<ul><span class="design__ul">Услуга включает в себя:</span> 
+					<span class="design__ul">Услуга включает в себя:</span> 
+					<ul>
 						<li>согласование технического задания</li>
 						<li>подбор пряжи и фурнитуры</li> 
 						<li>конструирование изделия</li> 
@@ -236,11 +239,11 @@
 
 					<div class="tailor__item">
 						<div class="tailor__picture" id="tailor-picture"></div>
-				</div>
-
+					</div>
 					<div class="tailor__item">
-							<label class="tailor__label">Стоимость</label>
-					<div class="tailor__price" id="tailor-price"></div>
+						<label class="tailor__label">Стоимость</label>
+						<div class="tailor__price" id="tailor-price"></div>
+					</div>
 				</div>
 			</div>
 		</section>

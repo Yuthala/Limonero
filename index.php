@@ -261,6 +261,7 @@
 						<input 
 							type="text" 
 							name="name" 
+							id="name"
 							class="contacts__name" 
 							placeholder="Ваше имя"
                 			pattern="[А-Яа-яЁё]{3,15}">
@@ -269,6 +270,7 @@
 						<input 
 						type="email" 
 						name="email" 
+						id="email"
 						class="contacts__email" 
 						placeholder="Ваш e-mail"
 						maxlength="30" 
@@ -285,8 +287,8 @@
 						<label for="message">Обязательное поле<span> *</span></label>
 						<textarea 
 						name="body" 
+						id="message"
 						class="contacts__textarea" 
-						pattern="[а-яА-ЯёЁa-zA-Z0-9]{3,250}"
 						placeholder="Ваше сообщение" 
 						required></textarea>
 
