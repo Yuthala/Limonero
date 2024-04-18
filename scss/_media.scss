@@ -1,5 +1,6 @@
 
 @media screen and (max-width: 1199px) {
+	/*INDEx PAGE*/
 	body .container {
 		width: 900px;
 	}
@@ -69,6 +70,13 @@
 		min-width: 900px;
 	}
 }
+
+/*CALCULATOR PAGE*/
+.machine-knit__label {
+	display: block;
+	height: 10vh;
+}
+
 
 @media screen and (max-width: 920px) {
 	body .container {
@@ -142,6 +150,8 @@
 /*iPad*/
 
 @media screen and (max-width: 769px) {
+
+	/*INDEx PAGE*/
 	body .container {
 		width: 680px;
 	}
@@ -313,6 +323,40 @@
 	}
 }
 
+/*CALCULATOR PAGE*/
+
+.calculator {
+	padding-bottom: 0;
+}
+.machine-knit p, .design p, .tailor p, .machine-knit__table-item, .machine-knit__example-item, .design li, select {
+	font-size: 16px;
+}
+
+.machine-knit__calculator, .design__calculator, .tailor__calculator {
+	gap: 30px;
+}
+
+.machine-knit__meters, .machine-knit__price, .design__price, .tailor__price {
+	font-size: 20px;
+}
+
+.tailor__picture, .design__picture {
+	max-height: 33vh;
+}
+
+
+.policy, .footer__author, .footer__author-text {
+	font-size: 14px;
+}
+
+.footer__author-text, .footer__author {
+	margin-bottom: 0;
+}
+
+.warning {
+	margin: 10px;
+}
+
 @media screen and (max-width: 680px) {
 	body .container {
 		width: 600px;
@@ -389,6 +433,7 @@
 }
 
 @media screen and (max-width: 600px) {
+	/*INDEx PAGE*/
 
 	body .container {
 		width: 520px;
@@ -443,7 +488,7 @@
 			z-index: 6;
 		}
 		&__burger {
-			position: absolute;
+			position: fixed;
 			top: 20px;
 			right: 10px;
 			height: 21px;
@@ -581,8 +626,23 @@
 	}
 }
 
+/*CALCULATOR PAGE*/
+
+.machine-knit p, .design p, .tailor p, .machine-knit__table-item, .machine-knit__example-item, .design li, select {
+	font-size: 14px;
+}
+
+.machine-knit__meters, .machine-knit__price, .design__price, .tailor__price {
+	font-size: 18px;
+}
+
+.tailor__calculator {
+	padding-bottom: 0;
+}
+
 /*iPhone SE*/
 @media screen and (max-width: 391px) {
+	/*INDEx PAGE*/
 	body .container {
 		width: 360px;
 	}
@@ -725,4 +785,18 @@
 	.footer__author-text {
 		margin-top: 10px;
 	}
+
+	/*CALCULATOR PAGE*/
+
+.machine-knit p, .design p, .tailor p, .machine-knit__table-item, .machine-knit__example-item, .design li, select {
+	font-size: 12px;
+}
+
+.machine-knit__meters, .machine-knit__price, .design__price, .tailor__price {
+	font-size: 16px;
+}
+
+.policy, .footer__author, .footer__author-text, .warning {
+	font-size: 12px;
+}
 }

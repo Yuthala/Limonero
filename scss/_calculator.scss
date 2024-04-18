@@ -1,4 +1,8 @@
 /*===General===*/
+.calculator {
+	padding: 5vh 10vw;
+}
+
 .dividerTable {
 	width: 10%;
 	height: 1px;
@@ -48,7 +52,7 @@
 		font-size: 24px;
 	}
 	&__calculator {
-		padding: 50px;
+		padding: 5vh 5vw;
 		margin: 0 auto;
 		display: flex;
 		gap: 100px;
@@ -66,13 +70,13 @@
 	&__table {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: repeat(10, 7vh);
+		grid-template-rows: repeat(10, 12vh);
 		margin-bottom: 40px;
 		&-item {
+			display: flex;
+			align-items: center;
 			border: 1px solid $light_accent;
 			padding-left: 10px;
-			padding-top: 2vh;
-			padding-bottom: 3vh;
 		}
 		&-item:nth-child(odd) {
 			border-right: none;
@@ -94,7 +98,7 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			margin-right: 5vw;
+			margin-right: 3vw;
 			img {
 				display: block;
 				width: 25vw;
@@ -104,7 +108,7 @@
 		&-table {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
-			grid-template-rows: repeat(8, 6vh);
+			grid-template-rows: repeat(8, 12vh);
 			padding-bottom: 4vh;
 		}
 		&-item {
@@ -121,7 +125,6 @@
 
 /*====Design====*/
 .design {
-	background-color: $dark_accent;
 	color: $light_shades;
 	line-height: 1.3;
 	p {
@@ -148,7 +151,7 @@
 		font-size: 24px;
 	}
 	&__calculator {
-		padding: 50px;
+		padding: 5vh 5vw;
 		margin: 0 auto;
 		display: flex;
 		gap: 100px;
@@ -169,13 +172,20 @@
 		font-size: 20px;
 		line-height: 3;
 	}
+	&-inner {
+		background-color: $dark_accent;
+	}
 	&-inner_flexwrap {
-		display: flex;
-		justify-content: space-between;
-		gap: 3vw;
+		position: relative;
+		// display: flex;
+		// justify-content: space-between;
+		// gap: 3vw;
 		img {
+			position: absolute;
+			right: 10vw;
+			bottom: 20vh;
 			width: 17vw;
-			padding-right: 2vw;
+			object-fit: cover;
 		}
 	}
 	&__picture {
@@ -231,9 +241,10 @@
 		font-size: 24px;
 	}
 	&__calculator {
-		padding: 50px;
+		padding: 5vh 5vw;
 		margin: 0 auto;
 		display: flex;
+		align-items: start;
 		gap: 100px;
 	}
 	&__item {
