@@ -16,7 +16,7 @@
 		min-width: 900px;
 		&__item {
 			width: 340px;
-			height: 322px;
+			height: 340px;
 		}
 		&__inner {
 			grid-gap: 130px;
@@ -640,6 +640,10 @@
 	padding-bottom: 0;
 }
 
+.design-inner_flexwrap img {
+	right: 0;
+}
+
 /*iPhone SE*/
 @media screen and (max-width: 391px) {
 	/*INDEx PAGE*/
@@ -799,4 +803,9 @@
 .policy, .footer__author, .footer__author-text, .warning {
 	font-size: 12px;
 }
+
+.design-inner_flexwrap img {
+	display: none;
+}
+
 }

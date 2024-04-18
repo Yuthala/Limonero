@@ -1,5 +1,5 @@
 
-window.addEventListener('DOMContentLoaded', function() { //загрузка кода после того как загружены элементы DOM-дерева
+window.addEventListener('DOMContentLoaded', function() { 
 
 	'use strict';
 	
@@ -26,7 +26,6 @@ window.addEventListener('DOMContentLoaded', function() { //загрузка ко
 		let target = event.target;
 		console.log(`переменная target ${target}`);
 		if (target && target.classList.contains('menu__item-link')) { //делегируем событие click "обертке" табов
-			//console.log(`test passed`);
 			for(let i = 0; i < menuItems.length; i++) {
 				if (target == menuItems[i]) { //если выбран таб с индексом [i]
 					removeCurrent();// прячем все табы, начиная с первого ([0])

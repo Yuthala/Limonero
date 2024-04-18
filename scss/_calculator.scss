@@ -177,13 +177,10 @@
 	}
 	&-inner_flexwrap {
 		position: relative;
-		// display: flex;
-		// justify-content: space-between;
-		// gap: 3vw;
 		img {
 			position: absolute;
 			right: 10vw;
-			bottom: 20vh;
+			bottom: 0;
 			width: 17vw;
 			object-fit: cover;
 		}

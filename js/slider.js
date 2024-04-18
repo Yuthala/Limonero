@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', function() { //загрузка кода после того как загружены элементы DOM-дерева
+window.addEventListener('DOMContentLoaded', function() {
 
 	'use strict';
 
