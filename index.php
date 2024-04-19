@@ -136,34 +136,34 @@
 			<h2 class="slider__title title" id="portfolio">готовые работы</h2>
 			<div class="wrap">
 				<div class="slider-item slider-item-active">
-					<img src="img/slider/slide_1.jpg" alt="slide_1">
+					<img src="img/slider/slide_1.webp" alt="slide_1">
 				</div>
 				<div class="slider-item">
-					<img src="img/slider/slide_2.jpg" alt="slide_2">
+					<img src="img/slider/slide_2.webp" alt="slide_2">
 				</div>
 				<div class="slider-item">
-					<img src="img/slider/slide_3.jpg" alt="slide_3">
+					<img src="img/slider/slide_3.webp" alt="slide_3">
 				</div>
 				<div class="slider-item">
-					<img src="img/slider/slide_4.jpg" alt="slide_4">
+					<img src="img/slider/slide_4.webp" alt="slide_4">
 				</div>
 				<div class="slider-item">
-					<img src="img/slider/slide_5.jpg" alt="slide_5">
+					<img src="img/slider/slide_5.webp" alt="slide_5">
 				</div>
 				<div class="slider-item">
-					<img src="img/slider/slide_6.jpg" alt="slide_6">
+					<img src="img/slider/slide_6.webp" alt="slide_6">
 				</div>
 				<div class="slider-item">
-					<img src="img/slider/slide_7.jpg" alt="slide_7">
+					<img src="img/slider/slide_7.webp" alt="slide_7">
 				</div>
 				<div class="slider-item">
-					<img src="img/slider/slide_8.jpg" alt="slide_8">
+					<img src="img/slider/slide_8.webp" alt="slide_8">
 				</div>
 				<div class="slider-item">
-					<img src="img/slider/slide_9.jpg" alt="slide_9">
+					<img src="img/slider/slide_9.webp" alt="slide_9">
 				</div>
 				<div class="slider-item">
-					<img src="img/slider/slide_10.jpg" alt="slide_10">
+					<img src="img/slider/slide_10.webp" alt="slide_10">
 				</div>
 	
 				<div class="prev"><div class="arrow-left"></div></div>
@@ -192,27 +192,27 @@
 					<h2 class="advantages__title title">преимущества</h2>
 				<div class="advantages__inner">
 					<div class="advantages__item">
-						<img src="img/quality-round.png" alt="quality">
+						<img src="img/quality-round.webp" alt="quality">
 						<h3 class="advantages__text">гарантия качества</h3>
 					</div>
 					<div class="advantages__item">
-						<img src="img/equipment-round.png" alt="quality">
+						<img src="img/equipment-round.webp" alt="quality">
 						<h3 class="advantages__text">собственное оборудование</h3>
 					</div>
 					<div class="advantages__item">
-						<img src="img/little_slot-round.png" alt="quality">
+						<img src="img/little_slot-round.webp" alt="quality">
 						<h3 class="advantages__text">работаю с маленькими партиями</h3>
 					</div>
 					<div class="advantages__item">
-						<img src="img/calculations-round.png" alt="quality">
+						<img src="img/calculations-round.webp" alt="quality">
 						<h3 class="advantages__text">быстрый расчет стоимости</h3>
 					</div>
 					<div class="advantages__item">
-						<img src="img/wool_yarn-round.png" alt="yarn">
+						<img src="img/wool_yarn-round.webp" alt="yarn">
 						<h3 class="advantages__text">надежные поставщики<br>пряжи</h3>
 					</div>
 					<div class="advantages__item">
-						<img src="img/contract-round.png" alt="contract">
+						<img src="img/contract-round.webp" alt="contract">
 						<h3 class="advantages__text">Официально. Работаю с физлицами,<br>юрлицами, ИП</h3>
 					</div>
 				</div>
@@ -225,11 +225,11 @@
 				<h2 class="about__title title">О мастерской</h2>
 				<div class="about__inner">
 					<div class="about__item">
-						<img src="img/table.jpg" alt="working table">
-						<img src="img/sweater.jpg" alt="blue sweater">
-						<img src="img/computer.jpg" alt="computer">
-						<img src="img/workshop.jpg" alt="workshop">
-						<img src="img/dina-round.png" alt="Dina">
+						<img src="img/table.webp" alt="working table">
+						<img src="img/sweater.webp" alt="blue sweater">
+						<img src="img/computer.webp" alt="computer">
+						<img src="img/workshop.webp" alt="workshop">
+						<img src="img/dina-round.webp" alt="Dina">
 					</div>
 					<p class="about__text">Меня зовут Дина. Я основатель трикотажной мастерской Limonero. У меня большой опыт конструирования и изготовления женских, мужских и детских трикотажных изделий с использованием вязальных машин. Моя цель - помочь предпринимателям, которые хотят расширить свой ассортимент трикотажа, но при этом не вкладываться в производство крупных партий. Трикотажные фабрики редко работают с партиями менее 100 единиц одного артикула, но иногда нужно гораздо меньше. Это может быть лимитированная сезонная коллекция, изделия для небольшого магазина, небольшая партия для определенного мероприятия.<br><br>
 					В моей мастерской также можно заказать расчет трикотажного изделия для изготовления на другом производстве или самостоятельного изготовления. Сделаю все расчеты, схемы, описание, подберу пряжу и отвяжу сигнальный образец (образцовое изделие). Для промышленного производства эти материалы передаются на трикотажную фабрику, и по ним специалисты фабрики составляют программу для промышленной вязальной машины. <br><br>Я открыта вашим идеям, и могу дать им экспертную оценку модели с точки зрения материала, конструкции и технологии изготовления изделия.<br>

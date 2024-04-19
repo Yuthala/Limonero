@@ -140,7 +140,7 @@
 				<h3 class="machine-knit__subheader">Пример расчета</h3>
 				<div class="machine-knit__example">
 					<div class="machine-knit__example-image">
-						<img src="img/jacket.jpg" alt="jacket">
+						<img src="img/jacket.webp" alt="jacket">
 					</div>
 					<div class="machine-knit__example-table">
 						<div class="machine-knit__example-item tableheader">Жилет оверсайз</div>
@@ -180,7 +180,7 @@
 						<li>приемка проекта заказчиком</li>
 					</ul>
 
-					<img src="img/design.jpg" alt="design">
+					<img src="img/design.webp" alt="design">
 				</div>
 				<p><strong>Стоимость пряжи и фурнитуры оплачивается отдельно</strong></p>
 				<p>Стандартный срок составления описания на любое количество размеров - 30 дней. Если пряжа имеется у поставщика в наличии, это срок может быть сокращен.<br> Примерная стоимость услуги для различных изделий приведена ниже.</p>
@@ -189,19 +189,19 @@
 					<div class="design__item options-list">
 						<label class="design__label">Выберите изделие</label>
 						<select id="select-design">
-							<option data-image="img/calculator/image_1.jpg" value="0" class="design-option" selected >Базовый джемпер жен., без узоров</option>
-							<option data-image="img/calculator/image_2.jpg" class="design-option" value="1">Базовый джемпер жен., простой узор</option>
-							<option data-image="img/calculator/image_3.jpg" class="design-option" value="2">Базовый джемпер жен., с элементами жаккарда</option>
-							<option data-image="img/calculator/image_4.jpg" class="design-option" value="3">Базовый джемпер жен., с роспусками</option>
-							<option data-image="img/calculator/image_5.jpg" class="design-option" value="4">Базовый джемпер жен., с крупными одноцветными узорами</option>
-							<option data-image="img/calculator/image_6.jpg" class="design-option" value="5">Базовый джемпер жен., с крупными многоцветными узорами</option>
+							<option data-image="img/calculator/image_1.webp" value="0" class="design-option" selected >Базовый джемпер жен., без узоров</option>
+							<option data-image="img/calculator/image_2.webp" class="design-option" value="1">Базовый джемпер жен., простой узор</option>
+							<option data-image="img/calculator/image_3.webp" class="design-option" value="2">Базовый джемпер жен., с элементами жаккарда</option>
+							<option data-image="img/calculator/image_4.webp" class="design-option" value="3">Базовый джемпер жен., с роспусками</option>
+							<option data-image="img/calculator/image_5.webp" class="design-option" value="4">Базовый джемпер жен., с крупными одноцветными узорами</option>
+							<option data-image="img/calculator/image_6.webp" class="design-option" value="5">Базовый джемпер жен., с крупными многоцветными узорами</option>
 							<option data-image="img/calculator/image_7.webp" class="design-option" value="6">Базовый кардиган короткий жен.</option>
-							<option data-image="img/calculator/image_8.jpg" class="design-option" value="7">Базовый джемпер муж., без узоров</option>
-							<option data-image="img/calculator/image_9.jpg" class="design-option" value="8">Базовый джемпер дет., р. 98, без узоров</option>
-							<option data-image="img/calculator/image_10.jpg" class="design-option" value="9">Жилетка жен.</option>
-							<option data-image="img/calculator/image_11.jpg" class="design-option" value="10">Платье прямое, длина 100 см</option>
-							<option data-image="img/calculator/image_12.jpg" class="design-option" value="11">Шапка взросл.</option>
-							<option data-image="img/calculator/image_13.jpg" class="design-option" value="12">Шарф длина 180 см, шир. 30 см</option>
+							<option data-image="img/calculator/image_8.webp" class="design-option" value="7">Базовый джемпер муж., без узоров</option>
+							<option data-image="img/calculator/image_9.webp" class="design-option" value="8">Базовый джемпер дет., р. 98, без узоров</option>
+							<option data-image="img/calculator/image_10.webp" class="design-option" value="9">Жилетка жен.</option>
+							<option data-image="img/calculator/image_11.webp" class="design-option" value="10">Платье прямое, длина 100 см</option>
+							<option data-image="img/calculator/image_12.webp" class="design-option" value="11">Шапка взросл.</option>
+							<option data-image="img/calculator/image_13.webp" class="design-option" value="12">Шарф длина 180 см, шир. 30 см</option>
 						</select>
 					</div>
 
